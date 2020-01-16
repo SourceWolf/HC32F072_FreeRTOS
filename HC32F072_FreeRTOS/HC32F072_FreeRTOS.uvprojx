@@ -10,19 +10,20 @@
       <TargetName>HC32F072_FreeRTOS</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
-      <pCCUsed>5060422::V5.06 update 4 (build 422)::ARMCC</pCCUsed>
+      <pCCUsed>5060750::V5.06 update 6 (build 750)::ARMCC</pCCUsed>
+      <uAC6>0</uAC6>
       <TargetOption>
         <TargetCommonOption>
-          <Device>ARMCM0P</Device>
-          <Vendor>ARM</Vendor>
-          <PackID>ARM.CMSIS.5.4.0</PackID>
-          <PackURL>http://www.keil.com/pack/</PackURL>
-          <Cpu>IRAM(0x20000000,0x00020000) IROM(0x00000000,0x00040000) CPUTYPE("Cortex-M0+") CLOCK(12000000) ESEL ELITTLE</Cpu>
+          <Device>HC32F072PATA</Device>
+          <Vendor>HDSC</Vendor>
+          <PackID>HDSC.HC32F072.1.0.0</PackID>
+          <PackURL>https://raw.githubusercontent.com/hdscmcu/pack/master/</PackURL>
+          <Cpu>IRAM(0x20000000,0x4000) IROM(0x00000000,0x20000) CPUTYPE("Cortex-M0+") CLOCK(12000000) ELITTLE</Cpu>
           <FlashUtilSpec></FlashUtilSpec>
           <StartupFile></StartupFile>
-          <FlashDriverDll>UL2CM3(-S0 -C0 -P0 -FD20000000 -FC1000)</FlashDriverDll>
+          <FlashDriverDll>UL2CM3(-S0 -C0 -P0 -FD20000000 -FC1000 -FN1 -FF0FlashHC32F072_128K -FS00 -FL020000 -FP0($$Device:HC32F072PATA$Flash\FlashHC32F072_128K.FLM))</FlashDriverDll>
           <DeviceId>0</DeviceId>
-          <RegisterFile>$$Device:ARMCM0P$Device\ARM\ARMCM0plus\Include\ARMCM0plus.h</RegisterFile>
+          <RegisterFile>$$Device:HC32F072PATA$Device\Include\HC32F072PATA.h</RegisterFile>
           <MemoryEnv></MemoryEnv>
           <Cmp></Cmp>
           <Asm></Asm>
@@ -32,7 +33,7 @@
           <SLE66CMisc></SLE66CMisc>
           <SLE66AMisc></SLE66AMisc>
           <SLE66LinkerMisc></SLE66LinkerMisc>
-          <SFDFile></SFDFile>
+          <SFDFile>$$Device:HC32F072PATA$SVD\HC32F072PATA.sfr</SFDFile>
           <bCustSvd>0</bCustSvd>
           <UseEnv>0</UseEnv>
           <BinPath></BinPath>
@@ -51,7 +52,7 @@
           <OutputName>HC32F072_FreeRTOS</OutputName>
           <CreateExecutable>1</CreateExecutable>
           <CreateLib>0</CreateLib>
-          <CreateHexFile>0</CreateHexFile>
+          <CreateHexFile>1</CreateHexFile>
           <DebugInformation>1</DebugInformation>
           <BrowseInformation>1</BrowseInformation>
           <ListingPath>.\Listings\</ListingPath>
@@ -132,7 +133,7 @@
             <UseExternalTool>0</UseExternalTool>
             <RunIndependent>0</RunIndependent>
             <UpdateFlashBeforeDebugging>1</UpdateFlashBeforeDebugging>
-            <Capability>0</Capability>
+            <Capability>1</Capability>
             <DriverSelection>-1</DriverSelection>
           </Flash1>
           <bUseTDR>1</bUseTDR>
@@ -183,11 +184,12 @@
             <hadXRAM>0</hadXRAM>
             <uocXRam>0</uocXRam>
             <RvdsVP>0</RvdsVP>
+            <RvdsMve>0</RvdsMve>
             <hadIRAM2>0</hadIRAM2>
             <hadIROM2>0</hadIROM2>
             <StupSel>8</StupSel>
             <useUlib>0</useUlib>
-            <EndSel>1</EndSel>
+            <EndSel>0</EndSel>
             <uLtcg>0</uLtcg>
             <nSecure>0</nSecure>
             <RoSelD>3</RoSelD>
@@ -243,12 +245,12 @@
               <IRAM>
                 <Type>0</Type>
                 <StartAddress>0x20000000</StartAddress>
-                <Size>0x20000</Size>
+                <Size>0x4000</Size>
               </IRAM>
               <IROM>
                 <Type>1</Type>
                 <StartAddress>0x0</StartAddress>
-                <Size>0x40000</Size>
+                <Size>0x20000</Size>
               </IROM>
               <XRAM>
                 <Type>0</Type>
@@ -273,7 +275,7 @@
               <OCR_RVCT4>
                 <Type>1</Type>
                 <StartAddress>0x0</StartAddress>
-                <Size>0x40000</Size>
+                <Size>0x20000</Size>
               </OCR_RVCT4>
               <OCR_RVCT5>
                 <Type>1</Type>
@@ -298,7 +300,7 @@
               <OCR_RVCT9>
                 <Type>0</Type>
                 <StartAddress>0x20000000</StartAddress>
-                <Size>0x20000</Size>
+                <Size>0x4000</Size>
               </OCR_RVCT9>
               <OCR_RVCT10>
                 <Type>0</Type>
@@ -323,19 +325,20 @@
             <uThumb>0</uThumb>
             <uSurpInc>0</uSurpInc>
             <uC99>1</uC99>
+            <uGnu>0</uGnu>
             <useXO>0</useXO>
-            <v6Lang>1</v6Lang>
-            <v6LangP>1</v6LangP>
+            <v6Lang>3</v6Lang>
+            <v6LangP>3</v6LangP>
             <vShortEn>1</vShortEn>
             <vShortWch>1</vShortWch>
-            <v6Lto>0</v6Lto>
+            <v6Lto>1</v6Lto>
             <v6WtE>0</v6WtE>
             <v6Rtti>0</v6Rtti>
             <VariousControls>
               <MiscControls></MiscControls>
               <Define></Define>
               <Undefine></Undefine>
-              <IncludePath>.\driver\inc;.\driver\src;.\freertos-7.4.2\Source\CMSIS_RTOS;.\freertos-7.4.2\Source\include;.\freertos-7.4.2\Source\portable\MemMang;.\freertos-7.4.2\Source\portable\RVDS\ARM_CM0\MDK;.\freertos-7.4.2\Source\portable\RVDS\ARM_CM0;.\freertos-7.4.2\Source\portable\RVDS;.\freertos-7.4.2\Source\portable;.\freertos-7.4.2\Source;.\freertos-7.4.2;.\mcu\common\MDK;.\mcu\common;.\mcu\MDK;.\User</IncludePath>
+              <IncludePath>.\driver\inc;.\driver\src;.\freertos-7.4.2\Source\CMSIS_RTOS;.\freertos-7.4.2\Source\include;.\freertos-7.4.2\Source\portable\MemMang;.\freertos-7.4.2\Source\portable\RVDS\ARM_CM0\MDK;.\freertos-7.4.2\Source\portable\RVDS\ARM_CM0;.\freertos-7.4.2\Source\portable\RVDS;.\freertos-7.4.2\Source\portable;.\freertos-7.4.2\Source;.\freertos-7.4.2;.\mcu\common\MDK;.\mcu\common;.\mcu\MDK;.\hardware;.\App</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -369,7 +372,7 @@
             <ScatterFile></ScatterFile>
             <IncludeLibs></IncludeLibs>
             <IncludeLibsPath></IncludeLibsPath>
-            <Misc></Misc>
+            <Misc>--keep=*Handler</Misc>
             <LinkerInputFile></LinkerInputFile>
             <DisabledWarnings></DisabledWarnings>
           </LDads>
@@ -377,12 +380,22 @@
       </TargetOption>
       <Groups>
         <Group>
-          <GroupName>User</GroupName>
+          <GroupName>App</GroupName>
           <Files>
             <File>
               <FileName>main.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\User\main.c</FilePath>
+              <FilePath>.\App\main.c</FilePath>
+            </File>
+            <File>
+              <FileName>app_task.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\App\app_task.h</FilePath>
+            </File>
+            <File>
+              <FileName>app_task.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\App\app_task.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -617,6 +630,71 @@
           </Files>
         </Group>
         <Group>
+          <GroupName>Hardware</GroupName>
+          <Files>
+            <File>
+              <FileName>hd_gpt_timer.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\hardware\hd_gpt_timer.c</FilePath>
+            </File>
+            <File>
+              <FileName>hd_gpt_timer.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\hardware\hd_gpt_timer.h</FilePath>
+            </File>
+            <File>
+              <FileName>hd_gpio.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\hardware\hd_gpio.c</FilePath>
+            </File>
+            <File>
+              <FileName>hd_gpio.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\hardware\hd_gpio.h</FilePath>
+            </File>
+            <File>
+              <FileName>hd_pca.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\hardware\hd_pca.c</FilePath>
+            </File>
+            <File>
+              <FileName>hd_pca.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\hardware\hd_pca.h</FilePath>
+            </File>
+            <File>
+              <FileName>hd_uart1.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\hardware\hd_uart1.c</FilePath>
+            </File>
+            <File>
+              <FileName>hd_uart1.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\hardware\hd_uart1.h</FilePath>
+            </File>
+            <File>
+              <FileName>hd_can.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\hardware\hd_can.c</FilePath>
+            </File>
+            <File>
+              <FileName>hd_can.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\hardware\hd_can.h</FilePath>
+            </File>
+            <File>
+              <FileName>hd_adc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\hardware\hd_adc.c</FilePath>
+            </File>
+            <File>
+              <FileName>hd_adc.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\hardware\hd_adc.h</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
           <GroupName>::CMSIS</GroupName>
         </Group>
       </Groups>
@@ -626,8 +704,8 @@
   <RTE>
     <apis/>
     <components>
-      <component Cclass="CMSIS" Cgroup="CORE" Cvendor="ARM" Cversion="5.1.2" condition="ARMv6_7_8-M Device">
-        <package name="CMSIS" schemaVersion="1.3" url="http://www.keil.com/pack/" vendor="ARM" version="5.4.0"/>
+      <component Cclass="CMSIS" Cgroup="CORE" Cvendor="ARM" Cversion="5.2.0" condition="ARMv6_7_8-M Device">
+        <package name="CMSIS" schemaVersion="1.3" url="http://www.keil.com/pack/" vendor="ARM" version="5.5.1"/>
         <targetInfos>
           <targetInfo name="HC32F072_FreeRTOS"/>
         </targetInfos>

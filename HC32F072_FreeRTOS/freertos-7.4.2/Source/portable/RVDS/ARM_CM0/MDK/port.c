@@ -74,7 +74,8 @@
 /* Scheduler includes. */
 #include "FreeRTOS.h"
 #include "task.h"
-
+uint16_t Timer0_value;
+uint8_t Division,Flag_Sleep;
 #ifndef configSYSTICK_CLOCK_HZ
 	#define configSYSTICK_CLOCK_HZ configCPU_CLOCK_HZ
 #endif
@@ -548,4 +549,45 @@ uint32_t ulPreviousMask;
 		}
 #endif /* configOVERRIDE_DEFAULT_TICK_CONFIGURATION */
 /*-----------------------------------------------------------*/
-
+#if configUSE_TICKLESS_IDLE == 1
+void SetSleepTime(uint32_t ms)
+{
+    if(ms>500000)
+    {
+        return;//参数错误
+    }
+    uint32_t temp = 0,Div_temp = 0;
+    temp = (ms*32768)/1000;
+    while(temp > 32768)
+    {
+        temp = temp/2;
+        Div_temp++;
+    }
+    Division = Div_temp;
+    Timer0_value = temp;
+    if(Division > 9)
+    {
+        return;//参数错误
+    }
+//    Flag_Sleep = 1;//使能睡眠
+}
+TickType_t HC32F46x_freertos_sleep(TickType_t xExpectedIdleTime)
+{
+    SetSleepTime(xExpectedIdleTime);
+//    if(Flag_Sleep == 1)
+//    {
+//        Flag_Sleep = 0;
+        M4_TMR01->CMPAR_f.CMPA = Timer0_value;//设置周期
+        M4_TMR01->CNTAR_f.CNTA = 0;//定时器清零
+        M4_TMR01->BCONR_f.CKDIVA = Division;//分频数
+        TIMER0_Cmd(M4_TMR01, Tim0_ChannelA, Enable);//启动Timer定时。
+        System_Enter_StopMode();       
+//    }    
+//    return 0;
+}
+void HC32F46x_freertos_wakeup(TickType_t xExpectedIdleTime)
+{
+    SysTick_Config(48000);//48MHZ
+    return;
+}
+#endif /* configASSERT_DEFINED */

@@ -1,6 +1,6 @@
 ###############################################################################
 #
-# IAR ELF Linker V8.30.1.114/W32 for ARM                  24/Jul/2019  15:53:33
+# IAR ELF Linker V8.30.1.114/W32 for ARM                  10/Jan/2020  17:26:41
 # Copyright 2007-2018 IAR Systems AB.
 #
 #    Output file  =  
@@ -8,10 +8,11 @@
 #    Map file     =  
 #        C:\03-githubFiles\HC32F072_FreeRTOS\HC32F072_FreeRTOS\Debug\List\HC32F072_FreeRTOS.map
 #    Command line =  
-#        -f C:\Users\User\AppData\Local\Temp\EW175F.tmp
+#        -f C:\Users\User\AppData\Local\Temp\EWE2C1.tmp
 #        (C:\03-githubFiles\HC32F072_FreeRTOS\HC32F072_FreeRTOS\Debug\Obj\adc.o
 #        C:\03-githubFiles\HC32F072_FreeRTOS\HC32F072_FreeRTOS\Debug\Obj\adt.o
 #        C:\03-githubFiles\HC32F072_FreeRTOS\HC32F072_FreeRTOS\Debug\Obj\aes.o
+#        C:\03-githubFiles\HC32F072_FreeRTOS\HC32F072_FreeRTOS\Debug\Obj\app_task.o
 #        C:\03-githubFiles\HC32F072_FreeRTOS\HC32F072_FreeRTOS\Debug\Obj\bgr.o
 #        C:\03-githubFiles\HC32F072_FreeRTOS\HC32F072_FreeRTOS\Debug\Obj\bt.o
 #        C:\03-githubFiles\HC32F072_FreeRTOS\HC32F072_FreeRTOS\Debug\Obj\can.o
@@ -25,6 +26,12 @@
 #        C:\03-githubFiles\HC32F072_FreeRTOS\HC32F072_FreeRTOS\Debug\Obj\event_groups.o
 #        C:\03-githubFiles\HC32F072_FreeRTOS\HC32F072_FreeRTOS\Debug\Obj\flash.o
 #        C:\03-githubFiles\HC32F072_FreeRTOS\HC32F072_FreeRTOS\Debug\Obj\gpio.o
+#        C:\03-githubFiles\HC32F072_FreeRTOS\HC32F072_FreeRTOS\Debug\Obj\hd_adc.o
+#        C:\03-githubFiles\HC32F072_FreeRTOS\HC32F072_FreeRTOS\Debug\Obj\hd_can.o
+#        C:\03-githubFiles\HC32F072_FreeRTOS\HC32F072_FreeRTOS\Debug\Obj\hd_gpio.o
+#        C:\03-githubFiles\HC32F072_FreeRTOS\HC32F072_FreeRTOS\Debug\Obj\hd_gpt_timer.o
+#        C:\03-githubFiles\HC32F072_FreeRTOS\HC32F072_FreeRTOS\Debug\Obj\hd_pca.o
+#        C:\03-githubFiles\HC32F072_FreeRTOS\HC32F072_FreeRTOS\Debug\Obj\hd_uart1.o
 #        C:\03-githubFiles\HC32F072_FreeRTOS\HC32F072_FreeRTOS\Debug\Obj\hdiv.o
 #        C:\03-githubFiles\HC32F072_FreeRTOS\HC32F072_FreeRTOS\Debug\Obj\heap_4.o
 #        C:\03-githubFiles\HC32F072_FreeRTOS\HC32F072_FreeRTOS\Debug\Obj\i2c.o
@@ -102,44 +109,53 @@ initialize by copy { rw };
   .intvec            ro code          0x0    0xc0  startup_hc32f072.o [1]
                                    - 0xc0    0xc0
 
-"P1":                                      0x1474
-  .text              ro code         0xc0   0x5c0  tasks.o [1]
-  .text              ro code        0x680   0x20c  heap_4.o [1]
-  .text              ro code        0x88c    0x9a  list.o [1]
-  .text              ro code        0x926     0x2  startup_hc32f072.o [1]
-  .text              ro code        0x928    0xfc  port.o [1]
-  CODE               ro code        0xa24    0x7c  portasm.o [1]
-  .text              ro code        0xaa0    0xae  I32DivModFast.o [3]
-  .text              ro code        0xb4e     0x2  startup_hc32f072.o [1]
-  .text              ro code        0xb50     0x2  IntDivZer.o [3]
-  .text              ro code        0xb54   0x36c  sysctrl.o [1]
-  .text              ro code        0xec0    0x18  system_hc32f072.o [1]
-  .text              ro code        0xed8    0x34  ABImemcpy.o [3]
-  .text              ro code        0xf0c    0x32  ABImemset.o [3]
-  .text              ro code        0xf40    0x20  ddl.o [1]
-  .text              ro code        0xf60   0x210  main.o [1]
-  .text              ro code       0x1170   0x134  gpio.o [1]
-  .text              ro code       0x12a4   0x11e  interrupts_hc32f072.o [1]
-  .text              ro code       0x13c2    0x3c  zero_init3.o [3]
-  .text              ro code       0x13fe    0x30  copy_init3.o [3]
-  .text              ro code       0x1430    0x28  startup_hc32f072.o [1]
-  .text              ro code       0x1458    0x28  data_init.o [3]
-  .iar.init_table    const         0x1480    0x24  - Linker created -
-  .text              ro code       0x14a4    0x1e  cmain.o [3]
-  .text              ro code       0x14c2     0x4  low_level_init.o [2]
-  .text              ro code       0x14c6     0x8  exit.o [2]
-  .text              ro code       0x14d0     0xa  cexit.o [3]
-  .text              ro code       0x14dc    0x14  exit.o [4]
-  .rodata            const         0x14f0    0x14  sysctrl.o [1]
-  .rodata            const         0x1504     0xc  main.o [1]
-  .text              ro code       0x1510     0xc  cstartup_M.o [3]
-  .rodata            const         0x151c     0x8  tasks.o [1]
-  Initializer bytes  const         0x1524     0x8  <for P2-1>
-  .rodata            const         0x152c     0x4  heap_4.o [1]
-  .rodata            const         0x1530     0x4  sysctrl.o [1]
-  .rodata            const         0x1534     0x0  zero_init3.o [3]
-  .rodata            const         0x1534     0x0  copy_init3.o [3]
-                                 - 0x1534  0x1474
+"P1":                                      0x18e0
+  .text              ro code         0xc0   0x5f8  sysctrl.o [1]
+  .text              ro code        0x6b8    0x18  system_hc32f072.o [1]
+  .text              ro code        0x6d0    0x34  ABImemcpy.o [3]
+  .text              ro code        0x704    0x32  ABImemset.o [3]
+  .text              ro code        0x736     0x2  startup_hc32f072.o [1]
+  .text              ro code        0x738    0x2c  ddl.o [1]
+  .text              ro code        0x764   0x5c0  tasks.o [1]
+  .text              ro code        0xd24   0x20c  heap_4.o [1]
+  .text              ro code        0xf30    0x9a  list.o [1]
+  .text              ro code        0xfca     0x2  startup_hc32f072.o [1]
+  .text              ro code        0xfcc    0xfc  port.o [1]
+  CODE               ro code       0x10c8    0x7c  portasm.o [1]
+  .text              ro code       0x1144    0xae  I32DivModFast.o [3]
+  .text              ro code       0x11f4     0x2  IntDivZer.o [3]
+  .text              ro code       0x11f8   0x168  main.o [1]
+  .text              ro code       0x1360    0x3c  flash.o [1]
+  .text              ro code       0x139c    0x6c  app_task.o [1]
+  .text              ro code       0x1408    0x82  hd_gpio.o [1]
+  .text              ro code       0x148c   0x148  gpio.o [1]
+  .text              ro code       0x15d4   0x11e  interrupts_hc32f072.o [1]
+  .text              ro code       0x16f4    0x44  hd_gpt_timer.o [1]
+  .text              ro code       0x1738    0x40  hd_uart1.o [1]
+  .text              ro code       0x1778    0x20  hd_adc.o [1]
+  .text              ro code       0x1798    0x2c  timer3.o [1]
+  .text              ro code       0x17c4    0x44  adc.o [1]
+  .text              ro code       0x1808    0x26  uart.o [1]
+  .text              ro code       0x182e    0x3c  zero_init3.o [3]
+  .text              ro code       0x186a    0x30  copy_init3.o [3]
+  .text              ro code       0x189c    0x28  startup_hc32f072.o [1]
+  .text              ro code       0x18c4    0x28  data_init.o [3]
+  .iar.init_table    const         0x18ec    0x24  - Linker created -
+  .text              ro code       0x1910    0x1e  cmain.o [3]
+  .text              ro code       0x192e     0x4  low_level_init.o [2]
+  .text              ro code       0x1932     0x8  exit.o [2]
+  .text              ro code       0x193c     0xa  cexit.o [3]
+  .text              ro code       0x1948    0x14  exit.o [4]
+  .rodata            const         0x195c    0x14  sysctrl.o [1]
+  .rodata            const         0x1970     0xc  app_task.o [1]
+  .text              ro code       0x197c     0xc  cstartup_M.o [3]
+  .rodata            const         0x1988     0x8  tasks.o [1]
+  Initializer bytes  const         0x1990     0x8  <for P2-1>
+  .rodata            const         0x1998     0x4  heap_4.o [1]
+  .rodata            const         0x199c     0x4  sysctrl.o [1]
+  .rodata            const         0x19a0     0x0  zero_init3.o [3]
+  .rodata            const         0x19a0     0x0  copy_init3.o [3]
+                                 - 0x19a0  0x18e0
 
 "P2", part 1 of 3:                            0x8
   P2-1                        0x2000'0000     0x8  <Init block>
@@ -147,7 +163,7 @@ initialize by copy { rw };
     .data            inited   0x2000'0004     0x4  system_hc32f072.o [1]
                             - 0x2000'0008     0x8
 
-"P2", part 2 of 3:                          0xd4c
+"P2", part 2 of 3:                          0xd50
   .bss               zero     0x2000'0008   0xc00  heap_4.o [1]
   .bss               zero     0x2000'0c08    0x8c  tasks.o [1]
   .bss               zero     0x2000'0c94    0x14  tasks.o [1]
@@ -156,11 +172,11 @@ initialize by copy { rw };
   .bss               zero     0x2000'0cd0    0x14  tasks.o [1]
   .bss               zero     0x2000'0ce4    0x14  tasks.o [1]
   .bss               zero     0x2000'0cf8     0x8  heap_4.o [1]
-  .bss               zero     0x2000'0d00     0x4  heap_4.o [1]
+  .bss               zero     0x2000'0d00     0x4  app_task.o [1]
   .bss               zero     0x2000'0d04     0x4  heap_4.o [1]
   .bss               zero     0x2000'0d08     0x4  heap_4.o [1]
   .bss               zero     0x2000'0d0c     0x4  heap_4.o [1]
-  .bss               zero     0x2000'0d10     0x4  main.o [1]
+  .bss               zero     0x2000'0d10     0x4  heap_4.o [1]
   .bss               zero     0x2000'0d14     0x4  main.o [1]
   .bss               zero     0x2000'0d18     0x4  tasks.o [1]
   .bss               zero     0x2000'0d1c     0x4  tasks.o [1]
@@ -177,7 +193,10 @@ initialize by copy { rw };
   .bss               zero     0x2000'0d48     0x4  tasks.o [1]
   .bss               zero     0x2000'0d4c     0x4  tasks.o [1]
   .bss               zero     0x2000'0d50     0x4  tasks.o [1]
-                            - 0x2000'0d54   0xd4c
+  .bss               zero     0x2000'0d54     0x2  hd_adc.o [1]
+  .bss               zero     0x2000'0d56     0x1  hd_gpt_timer.o [1]
+  .bss               zero     0x2000'0d57     0x1  hd_uart1.o [1]
+                            - 0x2000'0d58   0xd50
 
 "P2", part 3 of 3:                          0x200
   CSTACK                      0x2000'0d58   0x200  <Block>
@@ -188,8 +207,7 @@ Unused ranges:
 
          From           To      Size
          ----           --      ----
-       0x1534     0x1'ffff  0x1'eacc
-  0x2000'0d54  0x2000'0d57       0x4
+       0x19a0     0x1'ffff  0x1'e660
   0x2000'0f58  0x2000'3fff    0x30a8
 
 
@@ -200,12 +218,12 @@ Unused ranges:
           Address      Size
           -------      ----
 Zero (__iar_zero_init3)
-    1 destination range, total size 0xd4c:
-          0x2000'0008  0xd4c
+    1 destination range, total size 0xd50:
+          0x2000'0008  0xd50
 
 Copy (__iar_copy_init3)
     1 source range, total size 0x8:
-               0x1524    0x8
+               0x1990    0x8
     1 destination range, total size 0x8:
           0x2000'0000    0x8
 
@@ -222,20 +240,29 @@ command line/config:
     Total:
 
 C:\03-githubFiles\HC32F072_FreeRTOS\HC32F072_FreeRTOS\Debug\Obj: [1]
-    ddl.o                       32
-    gpio.o                     308
+    adc.o                       68
+    app_task.o                 108       12        4
+    ddl.o                       44
+    flash.o                     60
+    gpio.o                     328
+    hd_adc.o                    32                 2
+    hd_gpio.o                  130
+    hd_gpt_timer.o              68                 1
+    hd_uart1.o                  64                 1
     heap_4.o                   524        4    3 096
     interrupts_hc32f072.o      286
     list.o                     154
-    main.o                     528       12        8
+    main.o                     360                 4
     port.o                     252        4        4
     portasm.o                  124
     startup_hc32f072.o         236
-    sysctrl.o                  876       24
+    sysctrl.o                1 528       24
     system_hc32f072.o           24        4        4
     tasks.o                  1 472        8      300
+    timer3.o                    44
+    uart.o                      38
     ------------------------------------------------
-    Total:                   4 816       56    3 412
+    Total:                   5 944       56    3 416
 
 dl6M_tlf.a: [2]
     exit.o                       8
@@ -262,10 +289,10 @@ shb_l.a: [4]
     ------------------------------------------------
     Total:                      20
 
-    Gaps                        10
+    Gaps                        14
     Linker created                       36      512
 ----------------------------------------------------
-    Grand Total:             5 336       92    3 924
+    Grand Total:             6 468       92    3 928
 
 
 *******************************************************************************
@@ -274,160 +301,195 @@ shb_l.a: [4]
 
 Entry                       Address   Size  Type      Object
 -----                       -------   ----  ----      ------
-.iar.init_table$$Base        0x1480          --   Gb  - Linker created -
-.iar.init_table$$Limit       0x14a4          --   Gb  - Linker created -
-?main                        0x14a5         Code  Gb  cmain.o [3]
-ADC_DAC_IRQHandler           0x137b    0xc  Code  Gb  interrupts_hc32f072.o [1]
-CAN_IRQHandler               0x13a3    0x8  Code  Gb  interrupts_hc32f072.o [1]
-CLKTRIM_CTS_IRQHandler       0x13b7    0xc  Code  Gb  interrupts_hc32f072.o [1]
+.iar.init_table$$Base        0x18ec          --   Gb  - Linker created -
+.iar.init_table$$Limit       0x1910          --   Gb  - Linker created -
+?main                        0x1911         Code  Gb  cmain.o [3]
+ADC_DAC_IRQHandler           0x16ab    0xc  Code  Gb  interrupts_hc32f072.o [1]
+Adc_ClrIrqStatus             0x17db    0xc  Code  Gb  adc.o [1]
+Adc_GetIrqStatus             0x17c5   0x16  Code  Gb  adc.o [1]
+Adc_GetSglResult             0x17fd    0x6  Code  Gb  adc.o [1]
+Adc_IRQHandler               0x1779   0x1c  Code  Gb  hd_adc.o [1]
+Adc_SGL_Start                0x17e7    0x8  Code  Gb  adc.o [1]
+Adc_result              0x2000'0d54    0x2  Data  Gb  hd_adc.o [1]
+CAN_IRQHandler               0x16d3    0x8  Code  Gb  interrupts_hc32f072.o [1]
+CLKTRIM_CTS_IRQHandler       0x16e7    0xc  Code  Gb  interrupts_hc32f072.o [1]
 CSTACK$$Base            0x2000'0d58          --   Gb  - Linker created -
 CSTACK$$Limit           0x2000'0f58          --   Gb  - Linker created -
-DMAC_IRQHandler              0x12db    0x8  Code  Gb  interrupts_hc32f072.o [1]
-FLASH_RAM_IRQHandler         0x13ab    0xc  Code  Gb  interrupts_hc32f072.o [1]
-Gpio_ClrIO                   0x1225   0x14  Code  Gb  gpio.o [1]
-Gpio_Init                    0x1171   0xa0  Code  Gb  gpio.o [1]
-Gpio_SetIO                   0x1211   0x14  Code  Gb  gpio.o [1]
+DMAC_IRQHandler              0x160b    0x8  Code  Gb  interrupts_hc32f072.o [1]
+FLASH_RAM_IRQHandler         0x16db    0xc  Code  Gb  interrupts_hc32f072.o [1]
+Flash_WaitCycle              0x1361   0x2a  Code  Gb  flash.o [1]
+GetBit                        0x759    0xc  Code  Gb  ddl.o [1]
+Gpio_ClrIO                   0x1541   0x14  Code  Gb  gpio.o [1]
+Gpio_Init                    0x148d   0xa0  Code  Gb  gpio.o [1]
+Gpio_SetAfMode               0x1555   0x14  Code  Gb  gpio.o [1]
+Gpio_SetIO                   0x152d   0x14  Code  Gb  gpio.o [1]
 Gpio_SfHClkOutputConfig
-                             0x1239   0x32  Code  Gb  gpio.o [1]
-HardFault_Handler            0x12a5    0xe  Code  Gb  interrupts_hc32f072.o [1]
-Hd_Test_Task            0x2000'0d10    0x4  Data  Gb  main.o [1]
-I2C0_IRQHandler              0x132b    0x8  Code  Gb  interrupts_hc32f072.o [1]
-I2C1_IRQHandler              0x1333    0x8  Code  Gb  interrupts_hc32f072.o [1]
-LPUART0_IRQHandler           0x1303    0x8  Code  Gb  interrupts_hc32f072.o [1]
-LPUART1_IRQHandler           0x130b    0x8  Code  Gb  interrupts_hc32f072.o [1]
-PCA_IRQHandler               0x136b    0x8  Code  Gb  interrupts_hc32f072.o [1]
-PORTA_IRQHandler             0x12b3    0x8  Code  Gb  interrupts_hc32f072.o [1]
-PORTB_IRQHandler             0x12bb    0x8  Code  Gb  interrupts_hc32f072.o [1]
-PORTC_E_IRQHandler           0x12c3    0xc  Code  Gb  interrupts_hc32f072.o [1]
-PORTD_F_IRQHandler           0x12cf    0xc  Code  Gb  interrupts_hc32f072.o [1]
-PendSV_Handler                0xa2b         Code  Gb  portasm.o [1]
-Port_init                    0x1033   0x4a  Code  Gb  main.o [1]
-Region$$Table$$Base          0x1480          --   Gb  - Linker created -
-Region$$Table$$Limit         0x14a4          --   Gb  - Linker created -
-SPI0_I2S0_IRQHandler         0x1313    0xc  Code  Gb  interrupts_hc32f072.o [1]
-SPI1_I2S1_IRQHandler         0x131f    0xc  Code  Gb  interrupts_hc32f072.o [1]
-SVC_Handler                   0xa69         Code  Gb  portasm.o [1]
-SetBit                        0xf41   0x20  Code  Gb  ddl.o [1]
-SysTick_Config               0x1003   0x30  Code  Lc  main.o [1]
-SysTick_Handler               0x9cb   0x20  Code  Gb  port.o [1]
+                             0x1569   0x32  Code  Gb  gpio.o [1]
+HardFault_Handler            0x15d5    0xe  Code  Gb  interrupts_hc32f072.o [1]
+Hd_Test_Task            0x2000'0d00    0x4  Data  Gb  app_task.o [1]
+I2C0_IRQHandler              0x165b    0x8  Code  Gb  interrupts_hc32f072.o [1]
+I2C1_IRQHandler              0x1663    0x8  Code  Gb  interrupts_hc32f072.o [1]
+LPUART0_IRQHandler           0x1633    0x8  Code  Gb  interrupts_hc32f072.o [1]
+LPUART1_IRQHandler           0x163b    0x8  Code  Gb  interrupts_hc32f072.o [1]
+PCA_IRQHandler               0x169b    0x8  Code  Gb  interrupts_hc32f072.o [1]
+PORTA_IRQHandler             0x15e3    0x8  Code  Gb  interrupts_hc32f072.o [1]
+PORTB_IRQHandler             0x15eb    0x8  Code  Gb  interrupts_hc32f072.o [1]
+PORTC_E_IRQHandler           0x15f3    0xc  Code  Gb  interrupts_hc32f072.o [1]
+PORTD_F_IRQHandler           0x15ff    0xc  Code  Gb  interrupts_hc32f072.o [1]
+PendSV_Handler               0x10cf         Code  Gb  portasm.o [1]
+Port_init                    0x1409   0x82  Code  Gb  hd_gpio.o [1]
+Region$$Table$$Base          0x18ec          --   Gb  - Linker created -
+Region$$Table$$Limit         0x1910          --   Gb  - Linker created -
+SPI0_I2S0_IRQHandler         0x1643    0xc  Code  Gb  interrupts_hc32f072.o [1]
+SPI1_I2S1_IRQHandler         0x164f    0xc  Code  Gb  interrupts_hc32f072.o [1]
+SVC_Handler                  0x110d         Code  Gb  portasm.o [1]
+SetBit                        0x739   0x20  Code  Gb  ddl.o [1]
+SysTick_Config               0x129b   0x30  Code  Lc  main.o [1]
+SysTick_Handler              0x106f   0x20  Code  Gb  port.o [1]
+Sysctrl_ClkInit               0x459   0x6c  Code  Gb  sysctrl.o [1]
 Sysctrl_ClkSourceEnable
-                              0xb61  0x12c  Code  Gb  sysctrl.o [1]
-Sysctrl_GetHClkFreq           0xcdd  0x138  Code  Gb  sysctrl.o [1]
+                               0xcd  0x12c  Code  Gb  sysctrl.o [1]
+Sysctrl_GetHClkFreq           0x319  0x138  Code  Gb  sysctrl.o [1]
+Sysctrl_SetHCLKDiv            0x611   0x22  Code  Gb  sysctrl.o [1]
+Sysctrl_SetPCLKDiv            0x633   0x22  Code  Gb  sysctrl.o [1]
+Sysctrl_SetPLLFreq            0x511   0xde  Code  Gb  sysctrl.o [1]
+Sysctrl_SetPLLStableTime
+                              0x2a9   0x22  Code  Gb  sysctrl.o [1]
 Sysctrl_SetPeripheralGate
-                              0xe89   0x28  Code  Gb  sysctrl.o [1]
-Sysctrl_SetRCHTrim            0xe1d   0x1e  Code  Gb  sysctrl.o [1]
-Sysctrl_SetRCLTrim            0xe61   0x1e  Code  Gb  sysctrl.o [1]
-Sysctrl_SysClkSwitch          0xc8d   0x28  Code  Gb  sysctrl.o [1]
+                              0x659   0x28  Code  Gb  sysctrl.o [1]
+Sysctrl_SetRCHTrim            0x4c5   0x1e  Code  Gb  sysctrl.o [1]
+Sysctrl_SetRCLStableTime
+                              0x267   0x22  Code  Gb  sysctrl.o [1]
+Sysctrl_SetRCLTrim            0x5ef   0x1e  Code  Gb  sysctrl.o [1]
+Sysctrl_SetXTHStableTime
+                              0x247   0x20  Code  Gb  sysctrl.o [1]
+Sysctrl_SetXTLStableTime
+                              0x289   0x20  Code  Gb  sysctrl.o [1]
+Sysctrl_SysClkSwitch          0x2cb   0x28  Code  Gb  sysctrl.o [1]
+Sysctrl_XTHDriverConfig
+                              0x1f9   0x1e  Code  Gb  sysctrl.o [1]
+Sysctrl_XTLDriverConfig
+                              0x217   0x30  Code  Gb  sysctrl.o [1]
 SystemCoreClock         0x2000'0004    0x4  Data  Gb  system_hc32f072.o [1]
-SystemCoreClockUpdate         0xec1    0xc  Code  Gb  system_hc32f072.o [1]
-SystemInit                    0xed1    0x8  Code  Gb  system_hc32f072.o [1]
-TIM0_IRQHandler              0x133b    0x8  Code  Gb  interrupts_hc32f072.o [1]
-TIM1_IRQHandler              0x1343    0x8  Code  Gb  interrupts_hc32f072.o [1]
-TIM2_IRQHandler              0x134b    0x8  Code  Gb  interrupts_hc32f072.o [1]
-TIM3_IRQHandler              0x12e3    0x8  Code  Gb  interrupts_hc32f072.o [1]
-TIM4_IRQHandler              0x1353    0x8  Code  Gb  interrupts_hc32f072.o [1]
-TIM5_IRQHandler              0x135b    0x8  Code  Gb  interrupts_hc32f072.o [1]
-TIM6_IRQHandler              0x1363    0x8  Code  Gb  interrupts_hc32f072.o [1]
-Task_Test                    0x107d   0x5c  Code  Gb  main.o [1]
-UART0_2_IRQHandler           0x12eb    0xc  Code  Gb  interrupts_hc32f072.o [1]
-UART1_3_IRQHandler           0x12f7    0xc  Code  Gb  interrupts_hc32f072.o [1]
-USBFS_IRQHandler             0x139b    0x8  Code  Gb  interrupts_hc32f072.o [1]
-VC0_1_2_LVD_IRQHandler       0x1387   0x14  Code  Gb  interrupts_hc32f072.o [1]
-WDT_IRQHandler               0x1373    0x8  Code  Gb  interrupts_hc32f072.o [1]
-_SysctrlUnlock                0xb55    0xc  Code  Lc  sysctrl.o [1]
-__NVIC_EnableIRQ              0xf61   0x18  Code  Lc  main.o [1]
-__NVIC_SetPriority            0xf79   0x8a  Code  Lc  main.o [1]
-__aeabi_idiv0                 0xb51         Code  Gb  IntDivZer.o [3]
-__aeabi_memclr4               0xf0d         Code  Gb  ABImemset.o [3]
-__aeabi_memclr8               0xf0d         Code  Gb  ABImemset.o [3]
-__aeabi_memcpy4               0xed9         Code  Wk  ABImemcpy.o [3]
-__aeabi_uidiv                 0xaa1         Code  Gb  I32DivModFast.o [3]
-__aeabi_uidivmod              0xaa1         Code  Gb  I32DivModFast.o [3]
-__cmain                      0x14a5         Code  Gb  cmain.o [3]
-__exit                       0x14dd   0x14  Code  Gb  exit.o [4]
-__iar_Memset4_word            0xf11         Code  Gb  ABImemset.o [3]
-__iar_copy_init3             0x13ff   0x30  Code  Gb  copy_init3.o [3]
-__iar_data_init3             0x1459   0x28  Code  Gb  data_init.o [3]
-__iar_program_start          0x1511         Code  Gb  cstartup_M.o [3]
-__iar_zero_init3             0x13c3   0x3c  Code  Gb  zero_init3.o [3]
-__low_level_init             0x14c3    0x4  Code  Gb  low_level_init.o [2]
+SystemCoreClockUpdate         0x6b9    0xc  Code  Gb  system_hc32f072.o [1]
+SystemInit                    0x6c9    0x8  Code  Gb  system_hc32f072.o [1]
+TIM0_IRQHandler              0x166b    0x8  Code  Gb  interrupts_hc32f072.o [1]
+TIM1_IRQHandler              0x1673    0x8  Code  Gb  interrupts_hc32f072.o [1]
+TIM2_IRQHandler              0x167b    0x8  Code  Gb  interrupts_hc32f072.o [1]
+TIM3_IRQHandler              0x1613    0x8  Code  Gb  interrupts_hc32f072.o [1]
+TIM4_IRQHandler              0x1683    0x8  Code  Gb  interrupts_hc32f072.o [1]
+TIM5_IRQHandler              0x168b    0x8  Code  Gb  interrupts_hc32f072.o [1]
+TIM6_IRQHandler              0x1693    0x8  Code  Gb  interrupts_hc32f072.o [1]
+Task_Test                    0x139d   0x44  Code  Gb  app_task.o [1]
+Tim3_ClearIntFlag            0x17ab   0x12  Code  Gb  timer3.o [1]
+Tim3_GetIntFlag              0x1799   0x12  Code  Gb  timer3.o [1]
+Tim3_IRQHandler              0x16f5   0x40  Code  Gb  hd_gpt_timer.o [1]
+Tim3_IRQHandler::i      0x2000'0d56    0x1  Data  Lc  hd_gpt_timer.o [1]
+UART0_2_IRQHandler           0x161b    0xc  Code  Gb  interrupts_hc32f072.o [1]
+UART1_3_IRQHandler           0x1627    0xc  Code  Gb  interrupts_hc32f072.o [1]
+USBFS_IRQHandler             0x16cb    0x8  Code  Gb  interrupts_hc32f072.o [1]
+Uart1_IRQHandler             0x1739   0x38  Code  Gb  hd_uart1.o [1]
+Uart_ClrStatus               0x1819   0x10  Code  Gb  uart.o [1]
+Uart_GetStatus               0x1809   0x10  Code  Gb  uart.o [1]
+Uart_ReceiveData             0x1829    0x6  Code  Gb  uart.o [1]
+VC0_1_2_LVD_IRQHandler       0x16b7   0x14  Code  Gb  interrupts_hc32f072.o [1]
+WDT_IRQHandler               0x16a3    0x8  Code  Gb  interrupts_hc32f072.o [1]
+_SysctrlUnlock                 0xc1    0xc  Code  Lc  sysctrl.o [1]
+__NVIC_EnableIRQ             0x11f9   0x18  Code  Lc  main.o [1]
+__NVIC_SetPriority           0x1211   0x8a  Code  Lc  main.o [1]
+__aeabi_idiv0                0x11f5         Code  Gb  IntDivZer.o [3]
+__aeabi_memclr4               0x705         Code  Gb  ABImemset.o [3]
+__aeabi_memclr8               0x705         Code  Gb  ABImemset.o [3]
+__aeabi_memcpy4               0x6d1         Code  Wk  ABImemcpy.o [3]
+__aeabi_uidiv                0x1145         Code  Gb  I32DivModFast.o [3]
+__aeabi_uidivmod             0x1145         Code  Gb  I32DivModFast.o [3]
+__cmain                      0x1911         Code  Gb  cmain.o [3]
+__exit                       0x1949   0x14  Code  Gb  exit.o [4]
+__iar_Memset4_word            0x709         Code  Gb  ABImemset.o [3]
+__iar_copy_init3             0x186b   0x30  Code  Gb  copy_init3.o [3]
+__iar_data_init3             0x18c5   0x28  Code  Gb  data_init.o [3]
+__iar_program_start          0x197d         Code  Gb  cstartup_M.o [3]
+__iar_zero_init3             0x182f   0x3c  Code  Gb  zero_init3.o [3]
+__low_level_init             0x192f    0x4  Code  Gb  low_level_init.o [2]
 __vector_table                  0x0         Data  Gb  startup_hc32f072.o [1]
-_call_main                   0x14b1         Code  Gb  cmain.o [3]
-_exit                        0x14d1         Code  Gb  cexit.o [3]
-_main                        0x14bf         Code  Gb  cmain.o [3]
+_call_main                   0x191d         Code  Gb  cmain.o [3]
+_exit                        0x193d         Code  Gb  cexit.o [3]
+_main                        0x192b         Code  Gb  cmain.o [3]
 clk_data                0x2000'0d14    0x4  Data  Gb  main.o [1]
-exit                         0x14c7    0x8  Code  Gb  exit.o [2]
-main                         0x10d9   0x6e  Code  Gb  main.o [1]
+exit                         0x1933    0x8  Code  Gb  exit.o [2]
+main                         0x12cb   0x78  Code  Gb  main.o [1]
+os_task_init                 0x13e1   0x1c  Code  Gb  app_task.o [1]
 prvAddCurrentTaskToDelayedList
-                              0x609   0x5c  Code  Lc  tasks.o [1]
+                              0xcad   0x5c  Code  Lc  tasks.o [1]
 prvAddNewTaskToReadyList
-                              0x1b3   0x7c  Code  Lc  tasks.o [1]
+                              0x857   0x7c  Code  Lc  tasks.o [1]
 prvCheckTasksWaitingTermination
-                              0x559   0x4e  Code  Lc  tasks.o [1]
-prvDeleteTCB                  0x5a7   0x12  Code  Lc  tasks.o [1]
-prvHeapInit                   0x7b9   0x5a  Code  Lc  heap_4.o [1]
-prvIdleTask                   0x4fd   0x14  Code  Lc  tasks.o [1]
-prvInitialiseNewTask          0x129   0x8a  Code  Lc  tasks.o [1]
-prvInitialiseTaskLists        0x515   0x44  Code  Lc  tasks.o [1]
+                              0xbfd   0x4e  Code  Lc  tasks.o [1]
+prvDeleteTCB                  0xc4b   0x12  Code  Lc  tasks.o [1]
+prvHeapInit                   0xe5d   0x5a  Code  Lc  heap_4.o [1]
+prvIdleTask                   0xba1   0x14  Code  Lc  tasks.o [1]
+prvInitialiseNewTask          0x7cd   0x8a  Code  Lc  tasks.o [1]
+prvInitialiseTaskLists        0xbb9   0x44  Code  Lc  tasks.o [1]
 prvInsertBlockIntoFreeList
-                              0x813   0x5c  Code  Lc  heap_4.o [1]
+                              0xeb7   0x5c  Code  Lc  heap_4.o [1]
 prvResetNextTaskUnblockTime
-                              0x5b9   0x24  Code  Lc  tasks.o [1]
-prvTaskExitError              0x945   0x16  Code  Lc  port.o [1]
-pvPortMalloc                  0x681   0xda  Code  Gb  heap_4.o [1]
+                              0xc5d   0x24  Code  Lc  tasks.o [1]
+prvTaskExitError              0xfe9   0x16  Code  Lc  port.o [1]
+pvPortMalloc                  0xd25   0xda  Code  Gb  heap_4.o [1]
 pxCurrentTCB            0x2000'0d18    0x4  Data  Gb  tasks.o [1]
 pxDelayedTaskList       0x2000'0d1c    0x4  Data  Lc  tasks.o [1]
-pxEnd                   0x2000'0d00    0x4  Data  Lc  heap_4.o [1]
+pxEnd                   0x2000'0d04    0x4  Data  Lc  heap_4.o [1]
 pxOverflowDelayedTaskList
                         0x2000'0d20    0x4  Data  Lc  tasks.o [1]
-pxPortInitialiseStack         0x929   0x1a  Code  Gb  port.o [1]
+pxPortInitialiseStack         0xfcd   0x1a  Code  Gb  port.o [1]
 pxReadyTasksLists       0x2000'0c08   0x8c  Data  Lc  tasks.o [1]
+u8RxData                0x2000'0d57    0x1  Data  Gb  hd_uart1.o [1]
 ucHeap                  0x2000'0008  0xc00  Data  Lc  heap_4.o [1]
 ulSetInterruptMaskFromISR
-                              0xa8d         Code  Gb  portasm.o [1]
+                             0x1131         Code  Gb  portasm.o [1]
 uxCriticalNesting       0x2000'0000    0x4  Data  Lc  port.o [1]
 uxCurrentNumberOfTasks  0x2000'0d28    0x4  Data  Lc  tasks.o [1]
 uxDeletedTasksWaitingCleanUp
                         0x2000'0d24    0x4  Data  Lc  tasks.o [1]
-uxListRemove                  0x8ff   0x28  Code  Gb  list.o [1]
+uxListRemove                  0xfa3   0x28  Code  Gb  list.o [1]
 uxPendedTicks           0x2000'0d38    0x4  Data  Lc  tasks.o [1]
 uxSchedulerSuspended    0x2000'0d50    0x4  Data  Lc  tasks.o [1]
 uxTaskNumber            0x2000'0d44    0x4  Data  Lc  tasks.o [1]
 uxTopReadyPriority      0x2000'0d30    0x4  Data  Lc  tasks.o [1]
 vClearInterruptMaskFromISR
-                              0xa95         Code  Gb  portasm.o [1]
-vListInitialise               0x88d   0x1e  Code  Gb  list.o [1]
-vListInitialiseItem           0x8ab    0x6  Code  Gb  list.o [1]
-vListInsert                   0x8c9   0x36  Code  Gb  list.o [1]
-vListInsertEnd                0x8b1   0x18  Code  Gb  list.o [1]
-vPortEnterCritical            0x999   0x14  Code  Gb  port.o [1]
-vPortExitCritical             0x9ad   0x1e  Code  Gb  port.o [1]
-vPortFree                     0x75d   0x5c  Code  Gb  heap_4.o [1]
-vPortStartFirstTask           0xa6b         Code  Gb  portasm.o [1]
-vPortYield                    0x985   0x12  Code  Gb  port.o [1]
-vSetMSP                       0xa25         Code  Gb  portasm.o [1]
-vTaskDelay                    0x231   0x30  Code  Gb  tasks.o [1]
-vTaskStartScheduler           0x27d   0x42  Code  Gb  tasks.o [1]
-vTaskSuspendAll               0x2c1    0xa  Code  Gb  tasks.o [1]
-vTaskSwitchContext            0x479   0x5c  Code  Gb  tasks.o [1]
-xBlockAllocatedBit      0x2000'0d0c    0x4  Data  Lc  heap_4.o [1]
+                             0x1139         Code  Gb  portasm.o [1]
+vListInitialise               0xf31   0x1e  Code  Gb  list.o [1]
+vListInitialiseItem           0xf4f    0x6  Code  Gb  list.o [1]
+vListInsert                   0xf6d   0x36  Code  Gb  list.o [1]
+vListInsertEnd                0xf55   0x18  Code  Gb  list.o [1]
+vPortEnterCritical           0x103d   0x14  Code  Gb  port.o [1]
+vPortExitCritical            0x1051   0x1e  Code  Gb  port.o [1]
+vPortFree                     0xe01   0x5c  Code  Gb  heap_4.o [1]
+vPortStartFirstTask          0x110f         Code  Gb  portasm.o [1]
+vPortYield                   0x1029   0x12  Code  Gb  port.o [1]
+vSetMSP                      0x10c9         Code  Gb  portasm.o [1]
+vTaskDelay                    0x8d5   0x30  Code  Gb  tasks.o [1]
+vTaskStartScheduler           0x921   0x42  Code  Gb  tasks.o [1]
+vTaskSuspendAll               0x965    0xa  Code  Gb  tasks.o [1]
+vTaskSwitchContext            0xb1d   0x5c  Code  Gb  tasks.o [1]
+xBlockAllocatedBit      0x2000'0d10    0x4  Data  Lc  heap_4.o [1]
 xDelayedTaskList1       0x2000'0c94   0x14  Data  Lc  tasks.o [1]
 xDelayedTaskList2       0x2000'0ca8   0x14  Data  Lc  tasks.o [1]
-xFreeBytesRemaining     0x2000'0d04    0x4  Data  Lc  heap_4.o [1]
-xHeapStructSize              0x152c    0x4  Data  Lc  heap_4.o [1]
+xFreeBytesRemaining     0x2000'0d08    0x4  Data  Lc  heap_4.o [1]
+xHeapStructSize              0x1998    0x4  Data  Lc  heap_4.o [1]
 xIdleTaskHandle         0x2000'0d4c    0x4  Data  Lc  tasks.o [1]
 xMinimumEverFreeBytesRemaining
-                        0x2000'0d08    0x4  Data  Lc  heap_4.o [1]
+                        0x2000'0d0c    0x4  Data  Lc  heap_4.o [1]
 xNextTaskUnblockTime    0x2000'0d48    0x4  Data  Lc  tasks.o [1]
 xNumOfOverflows         0x2000'0d40    0x4  Data  Lc  tasks.o [1]
 xPendingReadyList       0x2000'0cbc   0x14  Data  Lc  tasks.o [1]
-xPortStartScheduler           0x95b   0x2a  Code  Gb  port.o [1]
+xPortStartScheduler           0xfff   0x2a  Code  Gb  port.o [1]
 xSchedulerRunning       0x2000'0d34    0x4  Data  Lc  tasks.o [1]
 xStart                  0x2000'0cf8    0x8  Data  Lc  heap_4.o [1]
 xSuspendedTaskList      0x2000'0ce4   0x14  Data  Lc  tasks.o [1]
-xTaskCreate                    0xc1   0x66  Code  Gb  tasks.o [1]
-xTaskIncrementTick            0x391   0xd2  Code  Gb  tasks.o [1]
-xTaskResumeAll                0x2cd   0xb4  Code  Gb  tasks.o [1]
+xTaskCreate                   0x765   0x66  Code  Gb  tasks.o [1]
+xTaskIncrementTick            0xa35   0xd2  Code  Gb  tasks.o [1]
+xTaskResumeAll                0x971   0xb4  Code  Gb  tasks.o [1]
 xTasksWaitingTermination
                         0x2000'0cd0   0x14  Data  Lc  tasks.o [1]
 xTickCount              0x2000'0d2c    0x4  Data  Lc  tasks.o [1]
@@ -439,9 +501,9 @@ xYieldPending           0x2000'0d3c    0x4  Data  Lc  tasks.o [1]
 [3] = rt6M_tl.a
 [4] = shb_l.a
 
-  5 336 bytes of readonly  code memory
+  6 468 bytes of readonly  code memory
      92 bytes of readonly  data memory
-  3 924 bytes of readwrite data memory
+  3 928 bytes of readwrite data memory
 
 Errors: none
 Warnings: none

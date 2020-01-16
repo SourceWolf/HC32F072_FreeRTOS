@@ -262,7 +262,12 @@ int __backspace(void)
 void delay1ms(uint32_t u32Cnt)
 {
     uint32_t u32end;
+    uint32_t load,val,ctrl;
     
+    load = SysTick->LOAD;
+    val = SysTick->VAL;
+    ctrl = SysTick->CTRL;
+    SysTick->LOAD = 0xFFFFFF;
     SysTick->LOAD = 0xFFFFFF;
     SysTick->VAL  = 0;
     SysTick->CTRL = SysTick_CTRL_ENABLE_Msk | SysTick_CTRL_CLKSOURCE_Msk;
@@ -276,8 +281,10 @@ void delay1ms(uint32_t u32Cnt)
             ;
         }
     }
-    
-    SysTick->CTRL = (SysTick->CTRL & (~SysTick_CTRL_ENABLE_Msk));
+    SysTick->LOAD = load;
+    SysTick->VAL  = val;
+    SysTick->CTRL = ctrl;
+//    SysTick->CTRL = (SysTick->CTRL & (~SysTick_CTRL_ENABLE_Msk));
 }
 
 /**
@@ -289,7 +296,10 @@ void delay1ms(uint32_t u32Cnt)
 void delay100us(uint32_t u32Cnt)
 {
     uint32_t u32end;
-    
+    uint32_t load,val,ctrl;
+    load = SysTick->LOAD;
+    val = SysTick->VAL;
+    ctrl = SysTick->CTRL;
     SysTick->LOAD = 0xFFFFFF;
     SysTick->VAL  = 0;
     SysTick->CTRL = SysTick_CTRL_ENABLE_Msk | SysTick_CTRL_CLKSOURCE_Msk;
@@ -305,7 +315,10 @@ void delay100us(uint32_t u32Cnt)
         }
     }
     
-    SysTick->CTRL = (SysTick->CTRL & (~SysTick_CTRL_ENABLE_Msk));
+//    SysTick->CTRL = (SysTick->CTRL & (~SysTick_CTRL_ENABLE_Msk));
+    SysTick->LOAD = load;
+    SysTick->VAL  = val;
+    SysTick->CTRL = ctrl;
 }
 
 /**
@@ -317,7 +330,10 @@ void delay100us(uint32_t u32Cnt)
 void delay10us(uint32_t u32Cnt)
 {
     uint32_t u32end;
-    
+    uint32_t load,val,ctrl;
+    load = SysTick->LOAD;
+    val = SysTick->VAL;
+    ctrl = SysTick->CTRL;
     SysTick->LOAD = 0xFFFFFF;
     SysTick->VAL  = 0;
     SysTick->CTRL = SysTick_CTRL_ENABLE_Msk | SysTick_CTRL_CLKSOURCE_Msk;
@@ -333,7 +349,10 @@ void delay10us(uint32_t u32Cnt)
         }
     }
     
-    SysTick->CTRL = (SysTick->CTRL & (~SysTick_CTRL_ENABLE_Msk));
+//    SysTick->CTRL = (SysTick->CTRL & (~SysTick_CTRL_ENABLE_Msk));
+    SysTick->LOAD = load;
+    SysTick->VAL  = val;
+    SysTick->CTRL = ctrl;
 }
 
 /**

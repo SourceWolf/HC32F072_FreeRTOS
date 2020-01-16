@@ -1,0 +1,951 @@
+Dependencies for Project 'HC32F072_FreeRTOS', Target 'HC32F072_FreeRTOS': (DO NOT MODIFY !)
+F (.\App\main.c)(0x5E0F2307)(--c99 -c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I .\driver\inc -I .\driver\src -I .\freertos-7.4.2\Source\CMSIS_RTOS -I .\freertos-7.4.2\Source\include -I .\freertos-7.4.2\Source\portable\MemMang -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0\MDK -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0 -I .\freertos-7.4.2\Source\portable\RVDS -I .\freertos-7.4.2\Source\portable -I .\freertos-7.4.2\Source -I .\freertos-7.4.2 -I .\mcu\common\MDK -I .\mcu\common -I .\mcu\MDK -I .\hardware -I .\App-I.\RTE\_HC32F072_FreeRTOS-IC:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\User\AppData\Local\Arm\Packs\HDSC\HC32F072\1.0.0\Device\Include-D__UVISION_VERSION="528" -D_RTE_-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (.\driver\inc\gpio.h)(0x5CE11625)
+I (.\driver\inc\ddl.h)(0x5CE10E46)
+I (.\mcu\common\base_types.h)(0x5CDD4F7B)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x5CEB79D6)
+I (.\mcu\common\board_evbhc32f072.h)(0x5CE115B5)
+I (.\mcu\common\hc32f072.h)(0x5CE10284)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm0plus.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D2590B6)
+I (.\mcu\common\system_hc32f072.h)(0x5CE10E47)
+I (.\driver\inc\sysctrl.h)(0x5CE114DC)
+I (.\mcu\common\interrupts_hc32f072.h)(0x5CE115AB)
+I (.\App\ddl_device.h)(0x5CEA5113)
+I (App\app_task.h)(0x5DE5CFFE)
+I (.\freertos-7.4.2\Source\CMSIS_RTOS\cmsis_os.h)(0x5D381AB3)
+I (.\freertos-7.4.2\Source\include\FreeRTOS.h)(0x5CFF14D2)
+I (.\App\FreeRTOSConfig.h)(0x5E0EA804)
+I (.\freertos-7.4.2\Source\include\projdefs.h)(0x5CFF14D2)
+I (.\freertos-7.4.2\Source\include\portable.h)(0x5CFF14D2)
+I (.\freertos-7.4.2\Source\include\deprecated_definitions.h)(0x5D1A1F2B)
+I (.\freertos-7.4.2\Source\portable\RVDS\ARM_CM0\MDK\portmacro.h)(0x5CFF14D2)
+I (.\freertos-7.4.2\Source\include\mpu_wrappers.h)(0x5CFF14D2)
+I (.\freertos-7.4.2\Source\include\task.h)(0x5CFF14D2)
+I (.\freertos-7.4.2\Source\include\list.h)(0x5CFF14D2)
+I (.\freertos-7.4.2\Source\include\timers.h)(0x5CFF14D2)
+I (.\freertos-7.4.2\Source\include\queue.h)(0x5CFF14D2)
+I (.\freertos-7.4.2\Source\include\semphr.h)(0x5CFF14D2)
+I (.\freertos-7.4.2\Source\include\event_groups.h)(0x5CFF14D2)
+I (.\hardware\hd_gpio.h)(0x5D6DCEBA)
+I (.\hardware\hd_gpt_timer.h)(0x5D6DD694)
+I (.\driver\inc\timer3.h)(0x5CDD4F7B)
+I (.\hardware\hd_pca.h)(0x5D6E285C)
+I (.\driver\inc\pca.h)(0x5CDD4F7B)
+I (.\hardware\hd_uart1.h)(0x5DDF55EC)
+I (.\driver\inc\uart.h)(0x5CDD4F7B)
+I (.\hardware\hd_adc.h)(0x5DE5D053)
+I (.\driver\inc\adc.h)(0x5CE11300)
+I (.\driver\inc\bgr.h)(0x5CDD4F7B)
+I (.\driver\inc\flash.h)(0x5CDD4F7B)
+I (.\driver\inc\lpm.h)(0x5CDD4F7B)
+F (.\App\app_task.h)(0x5DE5CFFE)()
+F (.\App\app_task.c)(0x5E0F2433)(--c99 -c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I .\driver\inc -I .\driver\src -I .\freertos-7.4.2\Source\CMSIS_RTOS -I .\freertos-7.4.2\Source\include -I .\freertos-7.4.2\Source\portable\MemMang -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0\MDK -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0 -I .\freertos-7.4.2\Source\portable\RVDS -I .\freertos-7.4.2\Source\portable -I .\freertos-7.4.2\Source -I .\freertos-7.4.2 -I .\mcu\common\MDK -I .\mcu\common -I .\mcu\MDK -I .\hardware -I .\App-I.\RTE\_HC32F072_FreeRTOS-IC:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\User\AppData\Local\Arm\Packs\HDSC\HC32F072\1.0.0\Device\Include-D__UVISION_VERSION="528" -D_RTE_-o .\objects\app_task.o --omf_browse .\objects\app_task.crf --depend .\objects\app_task.d)
+I (App\app_task.h)(0x5DE5CFFE)
+I (.\freertos-7.4.2\Source\CMSIS_RTOS\cmsis_os.h)(0x5D381AB3)
+I (.\freertos-7.4.2\Source\include\FreeRTOS.h)(0x5CFF14D2)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
+I (.\App\FreeRTOSConfig.h)(0x5E0EA804)
+I (.\freertos-7.4.2\Source\include\projdefs.h)(0x5CFF14D2)
+I (.\freertos-7.4.2\Source\include\portable.h)(0x5CFF14D2)
+I (.\freertos-7.4.2\Source\include\deprecated_definitions.h)(0x5D1A1F2B)
+I (.\freertos-7.4.2\Source\portable\RVDS\ARM_CM0\MDK\portmacro.h)(0x5CFF14D2)
+I (.\freertos-7.4.2\Source\include\mpu_wrappers.h)(0x5CFF14D2)
+I (.\freertos-7.4.2\Source\include\task.h)(0x5CFF14D2)
+I (.\freertos-7.4.2\Source\include\list.h)(0x5CFF14D2)
+I (.\freertos-7.4.2\Source\include\timers.h)(0x5CFF14D2)
+I (.\freertos-7.4.2\Source\include\queue.h)(0x5CFF14D2)
+I (.\freertos-7.4.2\Source\include\semphr.h)(0x5CFF14D2)
+I (.\freertos-7.4.2\Source\include\event_groups.h)(0x5CFF14D2)
+I (.\hardware\hd_gpio.h)(0x5D6DCEBA)
+I (.\driver\inc\sysctrl.h)(0x5CE114DC)
+I (.\driver\inc\ddl.h)(0x5CE10E46)
+I (.\mcu\common\base_types.h)(0x5CDD4F7B)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x5CEB79D6)
+I (.\mcu\common\board_evbhc32f072.h)(0x5CE115B5)
+I (.\mcu\common\hc32f072.h)(0x5CE10284)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm0plus.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D2590B6)
+I (.\mcu\common\system_hc32f072.h)(0x5CE10E47)
+I (.\mcu\common\interrupts_hc32f072.h)(0x5CE115AB)
+I (.\App\ddl_device.h)(0x5CEA5113)
+I (.\driver\inc\gpio.h)(0x5CE11625)
+I (.\hardware\hd_gpt_timer.h)(0x5D6DD694)
+I (.\driver\inc\timer3.h)(0x5CDD4F7B)
+I (.\hardware\hd_pca.h)(0x5D6E285C)
+I (.\driver\inc\pca.h)(0x5CDD4F7B)
+I (.\hardware\hd_uart1.h)(0x5DDF55EC)
+I (.\driver\inc\uart.h)(0x5CDD4F7B)
+I (.\hardware\hd_adc.h)(0x5DE5D053)
+I (.\driver\inc\adc.h)(0x5CE11300)
+I (.\driver\inc\bgr.h)(0x5CDD4F7B)
+F (.\freertos-7.4.2\Source\croutine.c)(0x5CFF14D2)(--c99 -c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I .\driver\inc -I .\driver\src -I .\freertos-7.4.2\Source\CMSIS_RTOS -I .\freertos-7.4.2\Source\include -I .\freertos-7.4.2\Source\portable\MemMang -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0\MDK -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0 -I .\freertos-7.4.2\Source\portable\RVDS -I .\freertos-7.4.2\Source\portable -I .\freertos-7.4.2\Source -I .\freertos-7.4.2 -I .\mcu\common\MDK -I .\mcu\common -I .\mcu\MDK -I .\hardware -I .\App-I.\RTE\_HC32F072_FreeRTOS-IC:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\User\AppData\Local\Arm\Packs\HDSC\HC32F072\1.0.0\Device\Include-D__UVISION_VERSION="528" -D_RTE_-o .\objects\croutine.o --omf_browse .\objects\croutine.crf --depend .\objects\croutine.d)
+I (.\freertos-7.4.2\Source\include\FreeRTOS.h)(0x5CFF14D2)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
+I (.\App\FreeRTOSConfig.h)(0x5E0EA804)
+I (.\freertos-7.4.2\Source\include\projdefs.h)(0x5CFF14D2)
+I (.\freertos-7.4.2\Source\include\portable.h)(0x5CFF14D2)
+I (.\freertos-7.4.2\Source\include\deprecated_definitions.h)(0x5D1A1F2B)
+I (.\freertos-7.4.2\Source\portable\RVDS\ARM_CM0\MDK\portmacro.h)(0x5CFF14D2)
+I (.\freertos-7.4.2\Source\include\mpu_wrappers.h)(0x5CFF14D2)
+I (.\freertos-7.4.2\Source\include\task.h)(0x5CFF14D2)
+I (.\freertos-7.4.2\Source\include\list.h)(0x5CFF14D2)
+I (.\freertos-7.4.2\Source\include\croutine.h)(0x5CFF14D2)
+F (.\freertos-7.4.2\Source\event_groups.c)(0x5D1A1F29)(--c99 -c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I .\driver\inc -I .\driver\src -I .\freertos-7.4.2\Source\CMSIS_RTOS -I .\freertos-7.4.2\Source\include -I .\freertos-7.4.2\Source\portable\MemMang -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0\MDK -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0 -I .\freertos-7.4.2\Source\portable\RVDS -I .\freertos-7.4.2\Source\portable -I .\freertos-7.4.2\Source -I .\freertos-7.4.2 -I .\mcu\common\MDK -I .\mcu\common -I .\mcu\MDK -I .\hardware -I .\App-I.\RTE\_HC32F072_FreeRTOS-IC:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\User\AppData\Local\Arm\Packs\HDSC\HC32F072\1.0.0\Device\Include-D__UVISION_VERSION="528" -D_RTE_-o .\objects\event_groups.o --omf_browse .\objects\event_groups.crf --depend .\objects\event_groups.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5CEB79E2)
+I (.\freertos-7.4.2\Source\include\FreeRTOS.h)(0x5CFF14D2)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
+I (.\App\FreeRTOSConfig.h)(0x5E0EA804)
+I (.\freertos-7.4.2\Source\include\projdefs.h)(0x5CFF14D2)
+I (.\freertos-7.4.2\Source\include\portable.h)(0x5CFF14D2)
+I (.\freertos-7.4.2\Source\include\deprecated_definitions.h)(0x5D1A1F2B)
+I (.\freertos-7.4.2\Source\portable\RVDS\ARM_CM0\MDK\portmacro.h)(0x5CFF14D2)
+I (.\freertos-7.4.2\Source\include\mpu_wrappers.h)(0x5CFF14D2)
+I (.\freertos-7.4.2\Source\include\task.h)(0x5CFF14D2)
+I (.\freertos-7.4.2\Source\include\list.h)(0x5CFF14D2)
+I (.\freertos-7.4.2\Source\include\timers.h)(0x5CFF14D2)
+I (.\freertos-7.4.2\Source\include\event_groups.h)(0x5CFF14D2)
+F (.\freertos-7.4.2\Source\list.c)(0x5CFF14D2)(--c99 -c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I .\driver\inc -I .\driver\src -I .\freertos-7.4.2\Source\CMSIS_RTOS -I .\freertos-7.4.2\Source\include -I .\freertos-7.4.2\Source\portable\MemMang -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0\MDK -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0 -I .\freertos-7.4.2\Source\portable\RVDS -I .\freertos-7.4.2\Source\portable -I .\freertos-7.4.2\Source -I .\freertos-7.4.2 -I .\mcu\common\MDK -I .\mcu\common -I .\mcu\MDK -I .\hardware -I .\App-I.\RTE\_HC32F072_FreeRTOS-IC:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\User\AppData\Local\Arm\Packs\HDSC\HC32F072\1.0.0\Device\Include-D__UVISION_VERSION="528" -D_RTE_-o .\objects\list.o --omf_browse .\objects\list.crf --depend .\objects\list.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5CEB79E2)
+I (.\freertos-7.4.2\Source\include\FreeRTOS.h)(0x5CFF14D2)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
+I (.\App\FreeRTOSConfig.h)(0x5E0EA804)
+I (.\freertos-7.4.2\Source\include\projdefs.h)(0x5CFF14D2)
+I (.\freertos-7.4.2\Source\include\portable.h)(0x5CFF14D2)
+I (.\freertos-7.4.2\Source\include\deprecated_definitions.h)(0x5D1A1F2B)
+I (.\freertos-7.4.2\Source\portable\RVDS\ARM_CM0\MDK\portmacro.h)(0x5CFF14D2)
+I (.\freertos-7.4.2\Source\include\mpu_wrappers.h)(0x5CFF14D2)
+I (.\freertos-7.4.2\Source\include\list.h)(0x5CFF14D2)
+F (.\freertos-7.4.2\Source\queue.c)(0x5CFF14D3)(--c99 -c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I .\driver\inc -I .\driver\src -I .\freertos-7.4.2\Source\CMSIS_RTOS -I .\freertos-7.4.2\Source\include -I .\freertos-7.4.2\Source\portable\MemMang -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0\MDK -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0 -I .\freertos-7.4.2\Source\portable\RVDS -I .\freertos-7.4.2\Source\portable -I .\freertos-7.4.2\Source -I .\freertos-7.4.2 -I .\mcu\common\MDK -I .\mcu\common -I .\mcu\MDK -I .\hardware -I .\App-I.\RTE\_HC32F072_FreeRTOS-IC:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\User\AppData\Local\Arm\Packs\HDSC\HC32F072\1.0.0\Device\Include-D__UVISION_VERSION="528" -D_RTE_-o .\objects\queue.o --omf_browse .\objects\queue.crf --depend .\objects\queue.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEB79E2)
+I (.\freertos-7.4.2\Source\include\FreeRTOS.h)(0x5CFF14D2)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
+I (.\App\FreeRTOSConfig.h)(0x5E0EA804)
+I (.\freertos-7.4.2\Source\include\projdefs.h)(0x5CFF14D2)
+I (.\freertos-7.4.2\Source\include\portable.h)(0x5CFF14D2)
+I (.\freertos-7.4.2\Source\include\deprecated_definitions.h)(0x5D1A1F2B)
+I (.\freertos-7.4.2\Source\portable\RVDS\ARM_CM0\MDK\portmacro.h)(0x5CFF14D2)
+I (.\freertos-7.4.2\Source\include\mpu_wrappers.h)(0x5CFF14D2)
+I (.\freertos-7.4.2\Source\include\task.h)(0x5CFF14D2)
+I (.\freertos-7.4.2\Source\include\list.h)(0x5CFF14D2)
+I (.\freertos-7.4.2\Source\include\queue.h)(0x5CFF14D2)
+F (.\freertos-7.4.2\Source\tasks.c)(0x5CFF14D3)(--c99 -c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I .\driver\inc -I .\driver\src -I .\freertos-7.4.2\Source\CMSIS_RTOS -I .\freertos-7.4.2\Source\include -I .\freertos-7.4.2\Source\portable\MemMang -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0\MDK -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0 -I .\freertos-7.4.2\Source\portable\RVDS -I .\freertos-7.4.2\Source\portable -I .\freertos-7.4.2\Source -I .\freertos-7.4.2 -I .\mcu\common\MDK -I .\mcu\common -I .\mcu\MDK -I .\hardware -I .\App-I.\RTE\_HC32F072_FreeRTOS-IC:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\User\AppData\Local\Arm\Packs\HDSC\HC32F072\1.0.0\Device\Include-D__UVISION_VERSION="528" -D_RTE_-o .\objects\tasks.o --omf_browse .\objects\tasks.crf --depend .\objects\tasks.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEB79E2)
+I (.\freertos-7.4.2\Source\include\FreeRTOS.h)(0x5CFF14D2)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
+I (.\App\FreeRTOSConfig.h)(0x5E0EA804)
+I (.\freertos-7.4.2\Source\include\projdefs.h)(0x5CFF14D2)
+I (.\freertos-7.4.2\Source\include\portable.h)(0x5CFF14D2)
+I (.\freertos-7.4.2\Source\include\deprecated_definitions.h)(0x5D1A1F2B)
+I (.\freertos-7.4.2\Source\portable\RVDS\ARM_CM0\MDK\portmacro.h)(0x5CFF14D2)
+I (.\freertos-7.4.2\Source\include\mpu_wrappers.h)(0x5CFF14D2)
+I (.\freertos-7.4.2\Source\include\task.h)(0x5CFF14D2)
+I (.\freertos-7.4.2\Source\include\list.h)(0x5CFF14D2)
+I (.\freertos-7.4.2\Source\include\timers.h)(0x5CFF14D2)
+I (.\freertos-7.4.2\Source\include\StackMacros.h)(0x5CFF14D2)
+F (.\freertos-7.4.2\Source\timers.c)(0x5CFF14D3)(--c99 -c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I .\driver\inc -I .\driver\src -I .\freertos-7.4.2\Source\CMSIS_RTOS -I .\freertos-7.4.2\Source\include -I .\freertos-7.4.2\Source\portable\MemMang -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0\MDK -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0 -I .\freertos-7.4.2\Source\portable\RVDS -I .\freertos-7.4.2\Source\portable -I .\freertos-7.4.2\Source -I .\freertos-7.4.2 -I .\mcu\common\MDK -I .\mcu\common -I .\mcu\MDK -I .\hardware -I .\App-I.\RTE\_HC32F072_FreeRTOS-IC:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\User\AppData\Local\Arm\Packs\HDSC\HC32F072\1.0.0\Device\Include-D__UVISION_VERSION="528" -D_RTE_-o .\objects\timers.o --omf_browse .\objects\timers.crf --depend .\objects\timers.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5CEB79E2)
+I (.\freertos-7.4.2\Source\include\FreeRTOS.h)(0x5CFF14D2)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
+I (.\App\FreeRTOSConfig.h)(0x5E0EA804)
+I (.\freertos-7.4.2\Source\include\projdefs.h)(0x5CFF14D2)
+I (.\freertos-7.4.2\Source\include\portable.h)(0x5CFF14D2)
+I (.\freertos-7.4.2\Source\include\deprecated_definitions.h)(0x5D1A1F2B)
+I (.\freertos-7.4.2\Source\portable\RVDS\ARM_CM0\MDK\portmacro.h)(0x5CFF14D2)
+I (.\freertos-7.4.2\Source\include\mpu_wrappers.h)(0x5CFF14D2)
+I (.\freertos-7.4.2\Source\include\task.h)(0x5CFF14D2)
+I (.\freertos-7.4.2\Source\include\list.h)(0x5CFF14D2)
+I (.\freertos-7.4.2\Source\include\queue.h)(0x5CFF14D2)
+I (.\freertos-7.4.2\Source\include\timers.h)(0x5CFF14D2)
+F (.\freertos-7.4.2\Source\portable\RVDS\ARM_CM0\MDK\port.c)(0x5E0EA804)(--c99 -c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I .\driver\inc -I .\driver\src -I .\freertos-7.4.2\Source\CMSIS_RTOS -I .\freertos-7.4.2\Source\include -I .\freertos-7.4.2\Source\portable\MemMang -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0\MDK -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0 -I .\freertos-7.4.2\Source\portable\RVDS -I .\freertos-7.4.2\Source\portable -I .\freertos-7.4.2\Source -I .\freertos-7.4.2 -I .\mcu\common\MDK -I .\mcu\common -I .\mcu\MDK -I .\hardware -I .\App-I.\RTE\_HC32F072_FreeRTOS-IC:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\User\AppData\Local\Arm\Packs\HDSC\HC32F072\1.0.0\Device\Include-D__UVISION_VERSION="528" -D_RTE_-o .\objects\port.o --omf_browse .\objects\port.crf --depend .\objects\port.d)
+I (.\freertos-7.4.2\Source\include\FreeRTOS.h)(0x5CFF14D2)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
+I (.\App\FreeRTOSConfig.h)(0x5E0EA804)
+I (.\freertos-7.4.2\Source\include\projdefs.h)(0x5CFF14D2)
+I (.\freertos-7.4.2\Source\include\portable.h)(0x5CFF14D2)
+I (.\freertos-7.4.2\Source\include\deprecated_definitions.h)(0x5D1A1F2B)
+I (.\freertos-7.4.2\Source\portable\RVDS\ARM_CM0\MDK\portmacro.h)(0x5CFF14D2)
+I (.\freertos-7.4.2\Source\include\mpu_wrappers.h)(0x5CFF14D2)
+I (.\freertos-7.4.2\Source\include\task.h)(0x5CFF14D2)
+I (.\freertos-7.4.2\Source\include\list.h)(0x5CFF14D2)
+F (.\freertos-7.4.2\Source\CMSIS_RTOS\cmsis_os.c)(0x5D381AA8)(--c99 -c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I .\driver\inc -I .\driver\src -I .\freertos-7.4.2\Source\CMSIS_RTOS -I .\freertos-7.4.2\Source\include -I .\freertos-7.4.2\Source\portable\MemMang -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0\MDK -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0 -I .\freertos-7.4.2\Source\portable\RVDS -I .\freertos-7.4.2\Source\portable -I .\freertos-7.4.2\Source -I .\freertos-7.4.2 -I .\mcu\common\MDK -I .\mcu\common -I .\mcu\MDK -I .\hardware -I .\App-I.\RTE\_HC32F072_FreeRTOS-IC:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\User\AppData\Local\Arm\Packs\HDSC\HC32F072\1.0.0\Device\Include-D__UVISION_VERSION="528" -D_RTE_-o .\objects\cmsis_os.o --omf_browse .\objects\cmsis_os.crf --depend .\objects\cmsis_os.d)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEB79E2)
+I (freertos-7.4.2\Source\CMSIS_RTOS\cmsis_os.h)(0x5D381AB3)
+I (.\freertos-7.4.2\Source\include\FreeRTOS.h)(0x5CFF14D2)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
+I (.\App\FreeRTOSConfig.h)(0x5E0EA804)
+I (.\freertos-7.4.2\Source\include\projdefs.h)(0x5CFF14D2)
+I (.\freertos-7.4.2\Source\include\portable.h)(0x5CFF14D2)
+I (.\freertos-7.4.2\Source\include\deprecated_definitions.h)(0x5D1A1F2B)
+I (.\freertos-7.4.2\Source\portable\RVDS\ARM_CM0\MDK\portmacro.h)(0x5CFF14D2)
+I (.\freertos-7.4.2\Source\include\mpu_wrappers.h)(0x5CFF14D2)
+I (.\freertos-7.4.2\Source\include\task.h)(0x5CFF14D2)
+I (.\freertos-7.4.2\Source\include\list.h)(0x5CFF14D2)
+I (.\freertos-7.4.2\Source\include\timers.h)(0x5CFF14D2)
+I (.\freertos-7.4.2\Source\include\queue.h)(0x5CFF14D2)
+I (.\freertos-7.4.2\Source\include\semphr.h)(0x5CFF14D2)
+I (.\freertos-7.4.2\Source\include\event_groups.h)(0x5CFF14D2)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D2590B6)
+F (.\freertos-7.4.2\Source\portable\MemMang\heap_4.c)(0x5CFF14D2)(--c99 -c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I .\driver\inc -I .\driver\src -I .\freertos-7.4.2\Source\CMSIS_RTOS -I .\freertos-7.4.2\Source\include -I .\freertos-7.4.2\Source\portable\MemMang -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0\MDK -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0 -I .\freertos-7.4.2\Source\portable\RVDS -I .\freertos-7.4.2\Source\portable -I .\freertos-7.4.2\Source -I .\freertos-7.4.2 -I .\mcu\common\MDK -I .\mcu\common -I .\mcu\MDK -I .\hardware -I .\App-I.\RTE\_HC32F072_FreeRTOS-IC:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\User\AppData\Local\Arm\Packs\HDSC\HC32F072\1.0.0\Device\Include-D__UVISION_VERSION="528" -D_RTE_-o .\objects\heap_4.o --omf_browse .\objects\heap_4.crf --depend .\objects\heap_4.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5CEB79E2)
+I (.\freertos-7.4.2\Source\include\FreeRTOS.h)(0x5CFF14D2)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
+I (.\App\FreeRTOSConfig.h)(0x5E0EA804)
+I (.\freertos-7.4.2\Source\include\projdefs.h)(0x5CFF14D2)
+I (.\freertos-7.4.2\Source\include\portable.h)(0x5CFF14D2)
+I (.\freertos-7.4.2\Source\include\deprecated_definitions.h)(0x5D1A1F2B)
+I (.\freertos-7.4.2\Source\portable\RVDS\ARM_CM0\MDK\portmacro.h)(0x5CFF14D2)
+I (.\freertos-7.4.2\Source\include\mpu_wrappers.h)(0x5CFF14D2)
+I (.\freertos-7.4.2\Source\include\task.h)(0x5CFF14D2)
+I (.\freertos-7.4.2\Source\include\list.h)(0x5CFF14D2)
+F (.\driver\src\adc.c)(0x5CDD4F7B)(--c99 -c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I .\driver\inc -I .\driver\src -I .\freertos-7.4.2\Source\CMSIS_RTOS -I .\freertos-7.4.2\Source\include -I .\freertos-7.4.2\Source\portable\MemMang -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0\MDK -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0 -I .\freertos-7.4.2\Source\portable\RVDS -I .\freertos-7.4.2\Source\portable -I .\freertos-7.4.2\Source -I .\freertos-7.4.2 -I .\mcu\common\MDK -I .\mcu\common -I .\mcu\MDK -I .\hardware -I .\App-I.\RTE\_HC32F072_FreeRTOS-IC:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\User\AppData\Local\Arm\Packs\HDSC\HC32F072\1.0.0\Device\Include-D__UVISION_VERSION="528" -D_RTE_-o .\objects\adc.o --omf_browse .\objects\adc.crf --depend .\objects\adc.d)
+I (.\driver\inc\adc.h)(0x5CE11300)
+I (.\driver\inc\ddl.h)(0x5CE10E46)
+I (.\mcu\common\base_types.h)(0x5CDD4F7B)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x5CEB79D6)
+I (.\mcu\common\board_evbhc32f072.h)(0x5CE115B5)
+I (.\mcu\common\hc32f072.h)(0x5CE10284)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm0plus.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D2590B6)
+I (.\mcu\common\system_hc32f072.h)(0x5CE10E47)
+I (.\driver\inc\sysctrl.h)(0x5CE114DC)
+I (.\mcu\common\interrupts_hc32f072.h)(0x5CE115AB)
+I (.\App\ddl_device.h)(0x5CEA5113)
+F (.\driver\src\adt.c)(0x5CDD4F7B)(--c99 -c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I .\driver\inc -I .\driver\src -I .\freertos-7.4.2\Source\CMSIS_RTOS -I .\freertos-7.4.2\Source\include -I .\freertos-7.4.2\Source\portable\MemMang -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0\MDK -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0 -I .\freertos-7.4.2\Source\portable\RVDS -I .\freertos-7.4.2\Source\portable -I .\freertos-7.4.2\Source -I .\freertos-7.4.2 -I .\mcu\common\MDK -I .\mcu\common -I .\mcu\MDK -I .\hardware -I .\App-I.\RTE\_HC32F072_FreeRTOS-IC:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\User\AppData\Local\Arm\Packs\HDSC\HC32F072\1.0.0\Device\Include-D__UVISION_VERSION="528" -D_RTE_-o .\objects\adt.o --omf_browse .\objects\adt.crf --depend .\objects\adt.d)
+I (.\driver\inc\adt.h)(0x5CE11301)
+I (.\driver\inc\ddl.h)(0x5CE10E46)
+I (.\mcu\common\base_types.h)(0x5CDD4F7B)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x5CEB79D6)
+I (.\mcu\common\board_evbhc32f072.h)(0x5CE115B5)
+I (.\mcu\common\hc32f072.h)(0x5CE10284)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm0plus.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D2590B6)
+I (.\mcu\common\system_hc32f072.h)(0x5CE10E47)
+I (.\driver\inc\sysctrl.h)(0x5CE114DC)
+I (.\mcu\common\interrupts_hc32f072.h)(0x5CE115AB)
+I (.\App\ddl_device.h)(0x5CEA5113)
+F (.\driver\src\aes.c)(0x5CDD4F7B)(--c99 -c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I .\driver\inc -I .\driver\src -I .\freertos-7.4.2\Source\CMSIS_RTOS -I .\freertos-7.4.2\Source\include -I .\freertos-7.4.2\Source\portable\MemMang -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0\MDK -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0 -I .\freertos-7.4.2\Source\portable\RVDS -I .\freertos-7.4.2\Source\portable -I .\freertos-7.4.2\Source -I .\freertos-7.4.2 -I .\mcu\common\MDK -I .\mcu\common -I .\mcu\MDK -I .\hardware -I .\App-I.\RTE\_HC32F072_FreeRTOS-IC:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\User\AppData\Local\Arm\Packs\HDSC\HC32F072\1.0.0\Device\Include-D__UVISION_VERSION="528" -D_RTE_-o .\objects\aes.o --omf_browse .\objects\aes.crf --depend .\objects\aes.d)
+I (.\driver\inc\aes.h)(0x5CDD4F7B)
+I (.\driver\inc\ddl.h)(0x5CE10E46)
+I (.\mcu\common\base_types.h)(0x5CDD4F7B)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x5CEB79D6)
+I (.\mcu\common\board_evbhc32f072.h)(0x5CE115B5)
+I (.\mcu\common\hc32f072.h)(0x5CE10284)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm0plus.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D2590B6)
+I (.\mcu\common\system_hc32f072.h)(0x5CE10E47)
+I (.\driver\inc\sysctrl.h)(0x5CE114DC)
+I (.\mcu\common\interrupts_hc32f072.h)(0x5CE115AB)
+I (.\App\ddl_device.h)(0x5CEA5113)
+F (.\driver\src\bgr.c)(0x5CDD4F7B)(--c99 -c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I .\driver\inc -I .\driver\src -I .\freertos-7.4.2\Source\CMSIS_RTOS -I .\freertos-7.4.2\Source\include -I .\freertos-7.4.2\Source\portable\MemMang -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0\MDK -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0 -I .\freertos-7.4.2\Source\portable\RVDS -I .\freertos-7.4.2\Source\portable -I .\freertos-7.4.2\Source -I .\freertos-7.4.2 -I .\mcu\common\MDK -I .\mcu\common -I .\mcu\MDK -I .\hardware -I .\App-I.\RTE\_HC32F072_FreeRTOS-IC:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\User\AppData\Local\Arm\Packs\HDSC\HC32F072\1.0.0\Device\Include-D__UVISION_VERSION="528" -D_RTE_-o .\objects\bgr.o --omf_browse .\objects\bgr.crf --depend .\objects\bgr.d)
+I (.\driver\inc\bgr.h)(0x5CDD4F7B)
+I (.\driver\inc\ddl.h)(0x5CE10E46)
+I (.\mcu\common\base_types.h)(0x5CDD4F7B)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x5CEB79D6)
+I (.\mcu\common\board_evbhc32f072.h)(0x5CE115B5)
+I (.\mcu\common\hc32f072.h)(0x5CE10284)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm0plus.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D2590B6)
+I (.\mcu\common\system_hc32f072.h)(0x5CE10E47)
+I (.\driver\inc\sysctrl.h)(0x5CE114DC)
+I (.\mcu\common\interrupts_hc32f072.h)(0x5CE115AB)
+I (.\App\ddl_device.h)(0x5CEA5113)
+F (.\driver\src\bt.c)(0x5CDD4F7B)(--c99 -c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I .\driver\inc -I .\driver\src -I .\freertos-7.4.2\Source\CMSIS_RTOS -I .\freertos-7.4.2\Source\include -I .\freertos-7.4.2\Source\portable\MemMang -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0\MDK -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0 -I .\freertos-7.4.2\Source\portable\RVDS -I .\freertos-7.4.2\Source\portable -I .\freertos-7.4.2\Source -I .\freertos-7.4.2 -I .\mcu\common\MDK -I .\mcu\common -I .\mcu\MDK -I .\hardware -I .\App-I.\RTE\_HC32F072_FreeRTOS-IC:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\User\AppData\Local\Arm\Packs\HDSC\HC32F072\1.0.0\Device\Include-D__UVISION_VERSION="528" -D_RTE_-o .\objects\bt.o --omf_browse .\objects\bt.crf --depend .\objects\bt.d)
+I (.\driver\inc\bt.h)(0x5CDD4F7B)
+I (.\driver\inc\ddl.h)(0x5CE10E46)
+I (.\mcu\common\base_types.h)(0x5CDD4F7B)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x5CEB79D6)
+I (.\mcu\common\board_evbhc32f072.h)(0x5CE115B5)
+I (.\mcu\common\hc32f072.h)(0x5CE10284)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm0plus.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D2590B6)
+I (.\mcu\common\system_hc32f072.h)(0x5CE10E47)
+I (.\driver\inc\sysctrl.h)(0x5CE114DC)
+I (.\mcu\common\interrupts_hc32f072.h)(0x5CE115AB)
+I (.\App\ddl_device.h)(0x5CEA5113)
+F (.\driver\src\can.c)(0x5CDD4F7B)(--c99 -c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I .\driver\inc -I .\driver\src -I .\freertos-7.4.2\Source\CMSIS_RTOS -I .\freertos-7.4.2\Source\include -I .\freertos-7.4.2\Source\portable\MemMang -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0\MDK -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0 -I .\freertos-7.4.2\Source\portable\RVDS -I .\freertos-7.4.2\Source\portable -I .\freertos-7.4.2\Source -I .\freertos-7.4.2 -I .\mcu\common\MDK -I .\mcu\common -I .\mcu\MDK -I .\hardware -I .\App-I.\RTE\_HC32F072_FreeRTOS-IC:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\User\AppData\Local\Arm\Packs\HDSC\HC32F072\1.0.0\Device\Include-D__UVISION_VERSION="528" -D_RTE_-o .\objects\can.o --omf_browse .\objects\can.crf --depend .\objects\can.d)
+I (.\driver\inc\can.h)(0x5CDD4F7B)
+I (.\driver\inc\ddl.h)(0x5CE10E46)
+I (.\mcu\common\base_types.h)(0x5CDD4F7B)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x5CEB79D6)
+I (.\mcu\common\board_evbhc32f072.h)(0x5CE115B5)
+I (.\mcu\common\hc32f072.h)(0x5CE10284)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm0plus.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D2590B6)
+I (.\mcu\common\system_hc32f072.h)(0x5CE10E47)
+I (.\driver\inc\sysctrl.h)(0x5CE114DC)
+I (.\mcu\common\interrupts_hc32f072.h)(0x5CE115AB)
+I (.\App\ddl_device.h)(0x5CEA5113)
+F (.\driver\src\crc.c)(0x5CDD4F7B)(--c99 -c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I .\driver\inc -I .\driver\src -I .\freertos-7.4.2\Source\CMSIS_RTOS -I .\freertos-7.4.2\Source\include -I .\freertos-7.4.2\Source\portable\MemMang -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0\MDK -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0 -I .\freertos-7.4.2\Source\portable\RVDS -I .\freertos-7.4.2\Source\portable -I .\freertos-7.4.2\Source -I .\freertos-7.4.2 -I .\mcu\common\MDK -I .\mcu\common -I .\mcu\MDK -I .\hardware -I .\App-I.\RTE\_HC32F072_FreeRTOS-IC:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\User\AppData\Local\Arm\Packs\HDSC\HC32F072\1.0.0\Device\Include-D__UVISION_VERSION="528" -D_RTE_-o .\objects\crc.o --omf_browse .\objects\crc.crf --depend .\objects\crc.d)
+I (.\driver\inc\crc.h)(0x5CDD4F7B)
+I (.\driver\inc\sysctrl.h)(0x5CE114DC)
+I (.\driver\inc\ddl.h)(0x5CE10E46)
+I (.\mcu\common\base_types.h)(0x5CDD4F7B)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x5CEB79D6)
+I (.\mcu\common\board_evbhc32f072.h)(0x5CE115B5)
+I (.\mcu\common\hc32f072.h)(0x5CE10284)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm0plus.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D2590B6)
+I (.\mcu\common\system_hc32f072.h)(0x5CE10E47)
+I (.\mcu\common\interrupts_hc32f072.h)(0x5CE115AB)
+I (.\App\ddl_device.h)(0x5CEA5113)
+F (.\driver\src\dac.c)(0x5CDD4F7B)(--c99 -c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I .\driver\inc -I .\driver\src -I .\freertos-7.4.2\Source\CMSIS_RTOS -I .\freertos-7.4.2\Source\include -I .\freertos-7.4.2\Source\portable\MemMang -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0\MDK -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0 -I .\freertos-7.4.2\Source\portable\RVDS -I .\freertos-7.4.2\Source\portable -I .\freertos-7.4.2\Source -I .\freertos-7.4.2 -I .\mcu\common\MDK -I .\mcu\common -I .\mcu\MDK -I .\hardware -I .\App-I.\RTE\_HC32F072_FreeRTOS-IC:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\User\AppData\Local\Arm\Packs\HDSC\HC32F072\1.0.0\Device\Include-D__UVISION_VERSION="528" -D_RTE_-o .\objects\dac.o --omf_browse .\objects\dac.crf --depend .\objects\dac.d)
+I (.\driver\inc\dac.h)(0x5CDD4F7B)
+I (.\driver\inc\ddl.h)(0x5CE10E46)
+I (.\mcu\common\base_types.h)(0x5CDD4F7B)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x5CEB79D6)
+I (.\mcu\common\board_evbhc32f072.h)(0x5CE115B5)
+I (.\mcu\common\hc32f072.h)(0x5CE10284)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm0plus.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D2590B6)
+I (.\mcu\common\system_hc32f072.h)(0x5CE10E47)
+I (.\driver\inc\sysctrl.h)(0x5CE114DC)
+I (.\mcu\common\interrupts_hc32f072.h)(0x5CE115AB)
+I (.\App\ddl_device.h)(0x5CEA5113)
+F (.\driver\src\ddl.c)(0x5DE5D8B5)(--c99 -c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I .\driver\inc -I .\driver\src -I .\freertos-7.4.2\Source\CMSIS_RTOS -I .\freertos-7.4.2\Source\include -I .\freertos-7.4.2\Source\portable\MemMang -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0\MDK -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0 -I .\freertos-7.4.2\Source\portable\RVDS -I .\freertos-7.4.2\Source\portable -I .\freertos-7.4.2\Source -I .\freertos-7.4.2 -I .\mcu\common\MDK -I .\mcu\common -I .\mcu\MDK -I .\hardware -I .\App-I.\RTE\_HC32F072_FreeRTOS-IC:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\User\AppData\Local\Arm\Packs\HDSC\HC32F072\1.0.0\Device\Include-D__UVISION_VERSION="528" -D_RTE_-o .\objects\ddl.o --omf_browse .\objects\ddl.crf --depend .\objects\ddl.d)
+I (.\driver\inc\ddl.h)(0x5CE10E46)
+I (.\mcu\common\base_types.h)(0x5CDD4F7B)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x5CEB79D6)
+I (.\mcu\common\board_evbhc32f072.h)(0x5CE115B5)
+I (.\mcu\common\hc32f072.h)(0x5CE10284)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm0plus.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D2590B6)
+I (.\mcu\common\system_hc32f072.h)(0x5CE10E47)
+I (.\driver\inc\sysctrl.h)(0x5CE114DC)
+I (.\mcu\common\interrupts_hc32f072.h)(0x5CE115AB)
+I (.\App\ddl_device.h)(0x5CEA5113)
+F (.\driver\src\debug.c)(0x5CDD4F7B)(--c99 -c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I .\driver\inc -I .\driver\src -I .\freertos-7.4.2\Source\CMSIS_RTOS -I .\freertos-7.4.2\Source\include -I .\freertos-7.4.2\Source\portable\MemMang -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0\MDK -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0 -I .\freertos-7.4.2\Source\portable\RVDS -I .\freertos-7.4.2\Source\portable -I .\freertos-7.4.2\Source -I .\freertos-7.4.2 -I .\mcu\common\MDK -I .\mcu\common -I .\mcu\MDK -I .\hardware -I .\App-I.\RTE\_HC32F072_FreeRTOS-IC:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\User\AppData\Local\Arm\Packs\HDSC\HC32F072\1.0.0\Device\Include-D__UVISION_VERSION="528" -D_RTE_-o .\objects\debug.o --omf_browse .\objects\debug.crf --depend .\objects\debug.d)
+I (.\driver\inc\debug.h)(0x5CE11302)
+I (.\driver\inc\ddl.h)(0x5CE10E46)
+I (.\mcu\common\base_types.h)(0x5CDD4F7B)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x5CEB79D6)
+I (.\mcu\common\board_evbhc32f072.h)(0x5CE115B5)
+I (.\mcu\common\hc32f072.h)(0x5CE10284)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm0plus.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D2590B6)
+I (.\mcu\common\system_hc32f072.h)(0x5CE10E47)
+I (.\driver\inc\sysctrl.h)(0x5CE114DC)
+I (.\mcu\common\interrupts_hc32f072.h)(0x5CE115AB)
+I (.\App\ddl_device.h)(0x5CEA5113)
+F (.\driver\src\dmac.c)(0x5CDD4F7B)(--c99 -c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I .\driver\inc -I .\driver\src -I .\freertos-7.4.2\Source\CMSIS_RTOS -I .\freertos-7.4.2\Source\include -I .\freertos-7.4.2\Source\portable\MemMang -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0\MDK -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0 -I .\freertos-7.4.2\Source\portable\RVDS -I .\freertos-7.4.2\Source\portable -I .\freertos-7.4.2\Source -I .\freertos-7.4.2 -I .\mcu\common\MDK -I .\mcu\common -I .\mcu\MDK -I .\hardware -I .\App-I.\RTE\_HC32F072_FreeRTOS-IC:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\User\AppData\Local\Arm\Packs\HDSC\HC32F072\1.0.0\Device\Include-D__UVISION_VERSION="528" -D_RTE_-o .\objects\dmac.o --omf_browse .\objects\dmac.crf --depend .\objects\dmac.d)
+I (.\driver\inc\dmac.h)(0x5CE115AF)
+I (.\driver\inc\ddl.h)(0x5CE10E46)
+I (.\mcu\common\base_types.h)(0x5CDD4F7B)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x5CEB79D6)
+I (.\mcu\common\board_evbhc32f072.h)(0x5CE115B5)
+I (.\mcu\common\hc32f072.h)(0x5CE10284)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm0plus.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D2590B6)
+I (.\mcu\common\system_hc32f072.h)(0x5CE10E47)
+I (.\driver\inc\sysctrl.h)(0x5CE114DC)
+I (.\mcu\common\interrupts_hc32f072.h)(0x5CE115AB)
+I (.\App\ddl_device.h)(0x5CEA5113)
+F (.\driver\src\flash.c)(0x5CDD4F7B)(--c99 -c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I .\driver\inc -I .\driver\src -I .\freertos-7.4.2\Source\CMSIS_RTOS -I .\freertos-7.4.2\Source\include -I .\freertos-7.4.2\Source\portable\MemMang -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0\MDK -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0 -I .\freertos-7.4.2\Source\portable\RVDS -I .\freertos-7.4.2\Source\portable -I .\freertos-7.4.2\Source -I .\freertos-7.4.2 -I .\mcu\common\MDK -I .\mcu\common -I .\mcu\MDK -I .\hardware -I .\App-I.\RTE\_HC32F072_FreeRTOS-IC:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\User\AppData\Local\Arm\Packs\HDSC\HC32F072\1.0.0\Device\Include-D__UVISION_VERSION="528" -D_RTE_-o .\objects\flash.o --omf_browse .\objects\flash.crf --depend .\objects\flash.d)
+I (.\driver\inc\flash.h)(0x5CDD4F7B)
+I (.\driver\inc\ddl.h)(0x5CE10E46)
+I (.\mcu\common\base_types.h)(0x5CDD4F7B)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x5CEB79D6)
+I (.\mcu\common\board_evbhc32f072.h)(0x5CE115B5)
+I (.\mcu\common\hc32f072.h)(0x5CE10284)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm0plus.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D2590B6)
+I (.\mcu\common\system_hc32f072.h)(0x5CE10E47)
+I (.\driver\inc\sysctrl.h)(0x5CE114DC)
+I (.\mcu\common\interrupts_hc32f072.h)(0x5CE115AB)
+I (.\App\ddl_device.h)(0x5CEA5113)
+F (.\driver\src\gpio.c)(0x5CDD4F7B)(--c99 -c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I .\driver\inc -I .\driver\src -I .\freertos-7.4.2\Source\CMSIS_RTOS -I .\freertos-7.4.2\Source\include -I .\freertos-7.4.2\Source\portable\MemMang -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0\MDK -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0 -I .\freertos-7.4.2\Source\portable\RVDS -I .\freertos-7.4.2\Source\portable -I .\freertos-7.4.2\Source -I .\freertos-7.4.2 -I .\mcu\common\MDK -I .\mcu\common -I .\mcu\MDK -I .\hardware -I .\App-I.\RTE\_HC32F072_FreeRTOS-IC:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\User\AppData\Local\Arm\Packs\HDSC\HC32F072\1.0.0\Device\Include-D__UVISION_VERSION="528" -D_RTE_-o .\objects\gpio.o --omf_browse .\objects\gpio.crf --depend .\objects\gpio.d)
+I (.\driver\inc\gpio.h)(0x5CE11625)
+I (.\driver\inc\ddl.h)(0x5CE10E46)
+I (.\mcu\common\base_types.h)(0x5CDD4F7B)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x5CEB79D6)
+I (.\mcu\common\board_evbhc32f072.h)(0x5CE115B5)
+I (.\mcu\common\hc32f072.h)(0x5CE10284)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm0plus.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D2590B6)
+I (.\mcu\common\system_hc32f072.h)(0x5CE10E47)
+I (.\driver\inc\sysctrl.h)(0x5CE114DC)
+I (.\mcu\common\interrupts_hc32f072.h)(0x5CE115AB)
+I (.\App\ddl_device.h)(0x5CEA5113)
+F (.\driver\src\hdiv.c)(0x5CDD4F7B)(--c99 -c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I .\driver\inc -I .\driver\src -I .\freertos-7.4.2\Source\CMSIS_RTOS -I .\freertos-7.4.2\Source\include -I .\freertos-7.4.2\Source\portable\MemMang -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0\MDK -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0 -I .\freertos-7.4.2\Source\portable\RVDS -I .\freertos-7.4.2\Source\portable -I .\freertos-7.4.2\Source -I .\freertos-7.4.2 -I .\mcu\common\MDK -I .\mcu\common -I .\mcu\MDK -I .\hardware -I .\App-I.\RTE\_HC32F072_FreeRTOS-IC:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\User\AppData\Local\Arm\Packs\HDSC\HC32F072\1.0.0\Device\Include-D__UVISION_VERSION="528" -D_RTE_-o .\objects\hdiv.o --omf_browse .\objects\hdiv.crf --depend .\objects\hdiv.d)
+I (.\driver\inc\ddl.h)(0x5CE10E46)
+I (.\mcu\common\base_types.h)(0x5CDD4F7B)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x5CEB79D6)
+I (.\mcu\common\board_evbhc32f072.h)(0x5CE115B5)
+I (.\mcu\common\hc32f072.h)(0x5CE10284)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm0plus.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D2590B6)
+I (.\mcu\common\system_hc32f072.h)(0x5CE10E47)
+I (.\driver\inc\sysctrl.h)(0x5CE114DC)
+I (.\mcu\common\interrupts_hc32f072.h)(0x5CE115AB)
+I (.\App\ddl_device.h)(0x5CEA5113)
+I (.\driver\inc\hdiv.h)(0x5CE0F970)
+F (.\driver\src\i2c.c)(0x5CDD501B)(--c99 -c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I .\driver\inc -I .\driver\src -I .\freertos-7.4.2\Source\CMSIS_RTOS -I .\freertos-7.4.2\Source\include -I .\freertos-7.4.2\Source\portable\MemMang -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0\MDK -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0 -I .\freertos-7.4.2\Source\portable\RVDS -I .\freertos-7.4.2\Source\portable -I .\freertos-7.4.2\Source -I .\freertos-7.4.2 -I .\mcu\common\MDK -I .\mcu\common -I .\mcu\MDK -I .\hardware -I .\App-I.\RTE\_HC32F072_FreeRTOS-IC:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\User\AppData\Local\Arm\Packs\HDSC\HC32F072\1.0.0\Device\Include-D__UVISION_VERSION="528" -D_RTE_-o .\objects\i2c.o --omf_browse .\objects\i2c.crf --depend .\objects\i2c.d)
+I (.\driver\inc\i2c.h)(0x5CDD4F7B)
+I (.\driver\inc\ddl.h)(0x5CE10E46)
+I (.\mcu\common\base_types.h)(0x5CDD4F7B)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x5CEB79D6)
+I (.\mcu\common\board_evbhc32f072.h)(0x5CE115B5)
+I (.\mcu\common\hc32f072.h)(0x5CE10284)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm0plus.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D2590B6)
+I (.\mcu\common\system_hc32f072.h)(0x5CE10E47)
+I (.\driver\inc\sysctrl.h)(0x5CE114DC)
+I (.\mcu\common\interrupts_hc32f072.h)(0x5CE115AB)
+I (.\App\ddl_device.h)(0x5CEA5113)
+F (.\driver\src\i2s.c)(0x5CDD4F7B)(--c99 -c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I .\driver\inc -I .\driver\src -I .\freertos-7.4.2\Source\CMSIS_RTOS -I .\freertos-7.4.2\Source\include -I .\freertos-7.4.2\Source\portable\MemMang -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0\MDK -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0 -I .\freertos-7.4.2\Source\portable\RVDS -I .\freertos-7.4.2\Source\portable -I .\freertos-7.4.2\Source -I .\freertos-7.4.2 -I .\mcu\common\MDK -I .\mcu\common -I .\mcu\MDK -I .\hardware -I .\App-I.\RTE\_HC32F072_FreeRTOS-IC:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\User\AppData\Local\Arm\Packs\HDSC\HC32F072\1.0.0\Device\Include-D__UVISION_VERSION="528" -D_RTE_-o .\objects\i2s.o --omf_browse .\objects\i2s.crf --depend .\objects\i2s.d)
+I (.\driver\inc\i2s.h)(0x5CE10E28)
+I (.\mcu\common\hc32f072.h)(0x5CE10284)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm0plus.h)(0x5D2590B6)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D2590B6)
+F (.\driver\src\lpm.c)(0x5CDD4F7B)(--c99 -c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I .\driver\inc -I .\driver\src -I .\freertos-7.4.2\Source\CMSIS_RTOS -I .\freertos-7.4.2\Source\include -I .\freertos-7.4.2\Source\portable\MemMang -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0\MDK -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0 -I .\freertos-7.4.2\Source\portable\RVDS -I .\freertos-7.4.2\Source\portable -I .\freertos-7.4.2\Source -I .\freertos-7.4.2 -I .\mcu\common\MDK -I .\mcu\common -I .\mcu\MDK -I .\hardware -I .\App-I.\RTE\_HC32F072_FreeRTOS-IC:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\User\AppData\Local\Arm\Packs\HDSC\HC32F072\1.0.0\Device\Include-D__UVISION_VERSION="528" -D_RTE_-o .\objects\lpm.o --omf_browse .\objects\lpm.crf --depend .\objects\lpm.d)
+I (.\driver\inc\lpm.h)(0x5CDD4F7B)
+I (.\driver\inc\ddl.h)(0x5CE10E46)
+I (.\mcu\common\base_types.h)(0x5CDD4F7B)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x5CEB79D6)
+I (.\mcu\common\board_evbhc32f072.h)(0x5CE115B5)
+I (.\mcu\common\hc32f072.h)(0x5CE10284)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm0plus.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D2590B6)
+I (.\mcu\common\system_hc32f072.h)(0x5CE10E47)
+I (.\driver\inc\sysctrl.h)(0x5CE114DC)
+I (.\mcu\common\interrupts_hc32f072.h)(0x5CE115AB)
+I (.\App\ddl_device.h)(0x5CEA5113)
+F (.\driver\src\lpuart.c)(0x5CDD4F7B)(--c99 -c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I .\driver\inc -I .\driver\src -I .\freertos-7.4.2\Source\CMSIS_RTOS -I .\freertos-7.4.2\Source\include -I .\freertos-7.4.2\Source\portable\MemMang -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0\MDK -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0 -I .\freertos-7.4.2\Source\portable\RVDS -I .\freertos-7.4.2\Source\portable -I .\freertos-7.4.2\Source -I .\freertos-7.4.2 -I .\mcu\common\MDK -I .\mcu\common -I .\mcu\MDK -I .\hardware -I .\App-I.\RTE\_HC32F072_FreeRTOS-IC:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\User\AppData\Local\Arm\Packs\HDSC\HC32F072\1.0.0\Device\Include-D__UVISION_VERSION="528" -D_RTE_-o .\objects\lpuart.o --omf_browse .\objects\lpuart.crf --depend .\objects\lpuart.d)
+I (.\driver\inc\lpuart.h)(0x5CDD4F7B)
+I (.\driver\inc\ddl.h)(0x5CE10E46)
+I (.\mcu\common\base_types.h)(0x5CDD4F7B)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x5CEB79D6)
+I (.\mcu\common\board_evbhc32f072.h)(0x5CE115B5)
+I (.\mcu\common\hc32f072.h)(0x5CE10284)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm0plus.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D2590B6)
+I (.\mcu\common\system_hc32f072.h)(0x5CE10E47)
+I (.\driver\inc\sysctrl.h)(0x5CE114DC)
+I (.\mcu\common\interrupts_hc32f072.h)(0x5CE115AB)
+I (.\App\ddl_device.h)(0x5CEA5113)
+F (.\driver\src\lvd.c)(0x5CDD4F7B)(--c99 -c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I .\driver\inc -I .\driver\src -I .\freertos-7.4.2\Source\CMSIS_RTOS -I .\freertos-7.4.2\Source\include -I .\freertos-7.4.2\Source\portable\MemMang -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0\MDK -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0 -I .\freertos-7.4.2\Source\portable\RVDS -I .\freertos-7.4.2\Source\portable -I .\freertos-7.4.2\Source -I .\freertos-7.4.2 -I .\mcu\common\MDK -I .\mcu\common -I .\mcu\MDK -I .\hardware -I .\App-I.\RTE\_HC32F072_FreeRTOS-IC:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\User\AppData\Local\Arm\Packs\HDSC\HC32F072\1.0.0\Device\Include-D__UVISION_VERSION="528" -D_RTE_-o .\objects\lvd.o --omf_browse .\objects\lvd.crf --depend .\objects\lvd.d)
+I (.\driver\inc\lvd.h)(0x5CDD4F7B)
+I (.\driver\inc\ddl.h)(0x5CE10E46)
+I (.\mcu\common\base_types.h)(0x5CDD4F7B)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x5CEB79D6)
+I (.\mcu\common\board_evbhc32f072.h)(0x5CE115B5)
+I (.\mcu\common\hc32f072.h)(0x5CE10284)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm0plus.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D2590B6)
+I (.\mcu\common\system_hc32f072.h)(0x5CE10E47)
+I (.\driver\inc\sysctrl.h)(0x5CE114DC)
+I (.\mcu\common\interrupts_hc32f072.h)(0x5CE115AB)
+I (.\App\ddl_device.h)(0x5CEA5113)
+F (.\driver\src\opa.c)(0x5CE0B231)(--c99 -c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I .\driver\inc -I .\driver\src -I .\freertos-7.4.2\Source\CMSIS_RTOS -I .\freertos-7.4.2\Source\include -I .\freertos-7.4.2\Source\portable\MemMang -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0\MDK -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0 -I .\freertos-7.4.2\Source\portable\RVDS -I .\freertos-7.4.2\Source\portable -I .\freertos-7.4.2\Source -I .\freertos-7.4.2 -I .\mcu\common\MDK -I .\mcu\common -I .\mcu\MDK -I .\hardware -I .\App-I.\RTE\_HC32F072_FreeRTOS-IC:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\User\AppData\Local\Arm\Packs\HDSC\HC32F072\1.0.0\Device\Include-D__UVISION_VERSION="528" -D_RTE_-o .\objects\opa.o --omf_browse .\objects\opa.crf --depend .\objects\opa.d)
+I (.\driver\inc\opa.h)(0x5CE0B231)
+I (.\driver\inc\ddl.h)(0x5CE10E46)
+I (.\mcu\common\base_types.h)(0x5CDD4F7B)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x5CEB79D6)
+I (.\mcu\common\board_evbhc32f072.h)(0x5CE115B5)
+I (.\mcu\common\hc32f072.h)(0x5CE10284)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm0plus.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D2590B6)
+I (.\mcu\common\system_hc32f072.h)(0x5CE10E47)
+I (.\driver\inc\sysctrl.h)(0x5CE114DC)
+I (.\mcu\common\interrupts_hc32f072.h)(0x5CE115AB)
+I (.\App\ddl_device.h)(0x5CEA5113)
+F (.\driver\src\pca.c)(0x5CE11441)(--c99 -c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I .\driver\inc -I .\driver\src -I .\freertos-7.4.2\Source\CMSIS_RTOS -I .\freertos-7.4.2\Source\include -I .\freertos-7.4.2\Source\portable\MemMang -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0\MDK -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0 -I .\freertos-7.4.2\Source\portable\RVDS -I .\freertos-7.4.2\Source\portable -I .\freertos-7.4.2\Source -I .\freertos-7.4.2 -I .\mcu\common\MDK -I .\mcu\common -I .\mcu\MDK -I .\hardware -I .\App-I.\RTE\_HC32F072_FreeRTOS-IC:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\User\AppData\Local\Arm\Packs\HDSC\HC32F072\1.0.0\Device\Include-D__UVISION_VERSION="528" -D_RTE_-o .\objects\pca.o --omf_browse .\objects\pca.crf --depend .\objects\pca.d)
+I (.\driver\inc\pca.h)(0x5CDD4F7B)
+I (.\driver\inc\ddl.h)(0x5CE10E46)
+I (.\mcu\common\base_types.h)(0x5CDD4F7B)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x5CEB79D6)
+I (.\mcu\common\board_evbhc32f072.h)(0x5CE115B5)
+I (.\mcu\common\hc32f072.h)(0x5CE10284)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm0plus.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D2590B6)
+I (.\mcu\common\system_hc32f072.h)(0x5CE10E47)
+I (.\driver\inc\sysctrl.h)(0x5CE114DC)
+I (.\mcu\common\interrupts_hc32f072.h)(0x5CE115AB)
+I (.\App\ddl_device.h)(0x5CEA5113)
+F (.\driver\src\ram.c)(0x5CDD4F7B)(--c99 -c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I .\driver\inc -I .\driver\src -I .\freertos-7.4.2\Source\CMSIS_RTOS -I .\freertos-7.4.2\Source\include -I .\freertos-7.4.2\Source\portable\MemMang -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0\MDK -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0 -I .\freertos-7.4.2\Source\portable\RVDS -I .\freertos-7.4.2\Source\portable -I .\freertos-7.4.2\Source -I .\freertos-7.4.2 -I .\mcu\common\MDK -I .\mcu\common -I .\mcu\MDK -I .\hardware -I .\App-I.\RTE\_HC32F072_FreeRTOS-IC:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\User\AppData\Local\Arm\Packs\HDSC\HC32F072\1.0.0\Device\Include-D__UVISION_VERSION="528" -D_RTE_-o .\objects\ram.o --omf_browse .\objects\ram.crf --depend .\objects\ram.d)
+I (.\driver\inc\ram.h)(0x5D2FC791)
+I (.\driver\inc\ddl.h)(0x5CE10E46)
+I (.\mcu\common\base_types.h)(0x5CDD4F7B)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x5CEB79D6)
+I (.\mcu\common\board_evbhc32f072.h)(0x5CE115B5)
+I (.\mcu\common\hc32f072.h)(0x5CE10284)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm0plus.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D2590B6)
+I (.\mcu\common\system_hc32f072.h)(0x5CE10E47)
+I (.\driver\inc\sysctrl.h)(0x5CE114DC)
+I (.\mcu\common\interrupts_hc32f072.h)(0x5CE115AB)
+I (.\App\ddl_device.h)(0x5CEA5113)
+F (.\driver\src\reset.c)(0x5CDD4F7B)(--c99 -c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I .\driver\inc -I .\driver\src -I .\freertos-7.4.2\Source\CMSIS_RTOS -I .\freertos-7.4.2\Source\include -I .\freertos-7.4.2\Source\portable\MemMang -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0\MDK -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0 -I .\freertos-7.4.2\Source\portable\RVDS -I .\freertos-7.4.2\Source\portable -I .\freertos-7.4.2\Source -I .\freertos-7.4.2 -I .\mcu\common\MDK -I .\mcu\common -I .\mcu\MDK -I .\hardware -I .\App-I.\RTE\_HC32F072_FreeRTOS-IC:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\User\AppData\Local\Arm\Packs\HDSC\HC32F072\1.0.0\Device\Include-D__UVISION_VERSION="528" -D_RTE_-o .\objects\reset.o --omf_browse .\objects\reset.crf --depend .\objects\reset.d)
+I (.\driver\inc\reset.h)(0x5CE114DE)
+I (.\driver\inc\ddl.h)(0x5CE10E46)
+I (.\mcu\common\base_types.h)(0x5CDD4F7B)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x5CEB79D6)
+I (.\mcu\common\board_evbhc32f072.h)(0x5CE115B5)
+I (.\mcu\common\hc32f072.h)(0x5CE10284)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm0plus.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D2590B6)
+I (.\mcu\common\system_hc32f072.h)(0x5CE10E47)
+I (.\driver\inc\sysctrl.h)(0x5CE114DC)
+I (.\mcu\common\interrupts_hc32f072.h)(0x5CE115AB)
+I (.\App\ddl_device.h)(0x5CEA5113)
+F (.\driver\src\spi.c)(0x5CDD4F7B)(--c99 -c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I .\driver\inc -I .\driver\src -I .\freertos-7.4.2\Source\CMSIS_RTOS -I .\freertos-7.4.2\Source\include -I .\freertos-7.4.2\Source\portable\MemMang -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0\MDK -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0 -I .\freertos-7.4.2\Source\portable\RVDS -I .\freertos-7.4.2\Source\portable -I .\freertos-7.4.2\Source -I .\freertos-7.4.2 -I .\mcu\common\MDK -I .\mcu\common -I .\mcu\MDK -I .\hardware -I .\App-I.\RTE\_HC32F072_FreeRTOS-IC:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\User\AppData\Local\Arm\Packs\HDSC\HC32F072\1.0.0\Device\Include-D__UVISION_VERSION="528" -D_RTE_-o .\objects\spi.o --omf_browse .\objects\spi.crf --depend .\objects\spi.d)
+I (.\driver\inc\spi.h)(0x5CDD4F7B)
+I (.\driver\inc\ddl.h)(0x5CE10E46)
+I (.\mcu\common\base_types.h)(0x5CDD4F7B)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x5CEB79D6)
+I (.\mcu\common\board_evbhc32f072.h)(0x5CE115B5)
+I (.\mcu\common\hc32f072.h)(0x5CE10284)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm0plus.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D2590B6)
+I (.\mcu\common\system_hc32f072.h)(0x5CE10E47)
+I (.\driver\inc\sysctrl.h)(0x5CE114DC)
+I (.\mcu\common\interrupts_hc32f072.h)(0x5CE115AB)
+I (.\App\ddl_device.h)(0x5CEA5113)
+F (.\driver\src\sysctrl.c)(0x5CE11302)(--c99 -c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I .\driver\inc -I .\driver\src -I .\freertos-7.4.2\Source\CMSIS_RTOS -I .\freertos-7.4.2\Source\include -I .\freertos-7.4.2\Source\portable\MemMang -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0\MDK -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0 -I .\freertos-7.4.2\Source\portable\RVDS -I .\freertos-7.4.2\Source\portable -I .\freertos-7.4.2\Source -I .\freertos-7.4.2 -I .\mcu\common\MDK -I .\mcu\common -I .\mcu\MDK -I .\hardware -I .\App-I.\RTE\_HC32F072_FreeRTOS-IC:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\User\AppData\Local\Arm\Packs\HDSC\HC32F072\1.0.0\Device\Include-D__UVISION_VERSION="528" -D_RTE_-o .\objects\sysctrl.o --omf_browse .\objects\sysctrl.crf --depend .\objects\sysctrl.d)
+I (.\driver\inc\sysctrl.h)(0x5CE114DC)
+I (.\driver\inc\ddl.h)(0x5CE10E46)
+I (.\mcu\common\base_types.h)(0x5CDD4F7B)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x5CEB79D6)
+I (.\mcu\common\board_evbhc32f072.h)(0x5CE115B5)
+I (.\mcu\common\hc32f072.h)(0x5CE10284)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm0plus.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D2590B6)
+I (.\mcu\common\system_hc32f072.h)(0x5CE10E47)
+I (.\mcu\common\interrupts_hc32f072.h)(0x5CE115AB)
+I (.\App\ddl_device.h)(0x5CEA5113)
+F (.\driver\src\timer3.c)(0x5CDD4F7B)(--c99 -c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I .\driver\inc -I .\driver\src -I .\freertos-7.4.2\Source\CMSIS_RTOS -I .\freertos-7.4.2\Source\include -I .\freertos-7.4.2\Source\portable\MemMang -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0\MDK -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0 -I .\freertos-7.4.2\Source\portable\RVDS -I .\freertos-7.4.2\Source\portable -I .\freertos-7.4.2\Source -I .\freertos-7.4.2 -I .\mcu\common\MDK -I .\mcu\common -I .\mcu\MDK -I .\hardware -I .\App-I.\RTE\_HC32F072_FreeRTOS-IC:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\User\AppData\Local\Arm\Packs\HDSC\HC32F072\1.0.0\Device\Include-D__UVISION_VERSION="528" -D_RTE_-o .\objects\timer3.o --omf_browse .\objects\timer3.crf --depend .\objects\timer3.d)
+I (.\driver\inc\timer3.h)(0x5CDD4F7B)
+I (.\driver\inc\ddl.h)(0x5CE10E46)
+I (.\mcu\common\base_types.h)(0x5CDD4F7B)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x5CEB79D6)
+I (.\mcu\common\board_evbhc32f072.h)(0x5CE115B5)
+I (.\mcu\common\hc32f072.h)(0x5CE10284)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm0plus.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D2590B6)
+I (.\mcu\common\system_hc32f072.h)(0x5CE10E47)
+I (.\driver\inc\sysctrl.h)(0x5CE114DC)
+I (.\mcu\common\interrupts_hc32f072.h)(0x5CE115AB)
+I (.\App\ddl_device.h)(0x5CEA5113)
+F (.\driver\src\trim.c)(0x5CDD4F7B)(--c99 -c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I .\driver\inc -I .\driver\src -I .\freertos-7.4.2\Source\CMSIS_RTOS -I .\freertos-7.4.2\Source\include -I .\freertos-7.4.2\Source\portable\MemMang -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0\MDK -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0 -I .\freertos-7.4.2\Source\portable\RVDS -I .\freertos-7.4.2\Source\portable -I .\freertos-7.4.2\Source -I .\freertos-7.4.2 -I .\mcu\common\MDK -I .\mcu\common -I .\mcu\MDK -I .\hardware -I .\App-I.\RTE\_HC32F072_FreeRTOS-IC:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\User\AppData\Local\Arm\Packs\HDSC\HC32F072\1.0.0\Device\Include-D__UVISION_VERSION="528" -D_RTE_-o .\objects\trim.o --omf_browse .\objects\trim.crf --depend .\objects\trim.d)
+I (.\driver\inc\trim.h)(0x5CDD4F7B)
+I (.\driver\inc\ddl.h)(0x5CE10E46)
+I (.\mcu\common\base_types.h)(0x5CDD4F7B)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x5CEB79D6)
+I (.\mcu\common\board_evbhc32f072.h)(0x5CE115B5)
+I (.\mcu\common\hc32f072.h)(0x5CE10284)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm0plus.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D2590B6)
+I (.\mcu\common\system_hc32f072.h)(0x5CE10E47)
+I (.\driver\inc\sysctrl.h)(0x5CE114DC)
+I (.\mcu\common\interrupts_hc32f072.h)(0x5CE115AB)
+I (.\App\ddl_device.h)(0x5CEA5113)
+F (.\driver\src\trng.c)(0x5CDD4F7B)(--c99 -c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I .\driver\inc -I .\driver\src -I .\freertos-7.4.2\Source\CMSIS_RTOS -I .\freertos-7.4.2\Source\include -I .\freertos-7.4.2\Source\portable\MemMang -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0\MDK -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0 -I .\freertos-7.4.2\Source\portable\RVDS -I .\freertos-7.4.2\Source\portable -I .\freertos-7.4.2\Source -I .\freertos-7.4.2 -I .\mcu\common\MDK -I .\mcu\common -I .\mcu\MDK -I .\hardware -I .\App-I.\RTE\_HC32F072_FreeRTOS-IC:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\User\AppData\Local\Arm\Packs\HDSC\HC32F072\1.0.0\Device\Include-D__UVISION_VERSION="528" -D_RTE_-o .\objects\trng.o --omf_browse .\objects\trng.crf --depend .\objects\trng.d)
+I (.\driver\inc\trng.h)(0x5CDD4F7B)
+I (.\driver\inc\ddl.h)(0x5CE10E46)
+I (.\mcu\common\base_types.h)(0x5CDD4F7B)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x5CEB79D6)
+I (.\mcu\common\board_evbhc32f072.h)(0x5CE115B5)
+I (.\mcu\common\hc32f072.h)(0x5CE10284)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm0plus.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D2590B6)
+I (.\mcu\common\system_hc32f072.h)(0x5CE10E47)
+I (.\driver\inc\sysctrl.h)(0x5CE114DC)
+I (.\mcu\common\interrupts_hc32f072.h)(0x5CE115AB)
+I (.\App\ddl_device.h)(0x5CEA5113)
+F (.\driver\src\uart.c)(0x5CDD4F7B)(--c99 -c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I .\driver\inc -I .\driver\src -I .\freertos-7.4.2\Source\CMSIS_RTOS -I .\freertos-7.4.2\Source\include -I .\freertos-7.4.2\Source\portable\MemMang -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0\MDK -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0 -I .\freertos-7.4.2\Source\portable\RVDS -I .\freertos-7.4.2\Source\portable -I .\freertos-7.4.2\Source -I .\freertos-7.4.2 -I .\mcu\common\MDK -I .\mcu\common -I .\mcu\MDK -I .\hardware -I .\App-I.\RTE\_HC32F072_FreeRTOS-IC:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\User\AppData\Local\Arm\Packs\HDSC\HC32F072\1.0.0\Device\Include-D__UVISION_VERSION="528" -D_RTE_-o .\objects\uart.o --omf_browse .\objects\uart.crf --depend .\objects\uart.d)
+I (.\driver\inc\uart.h)(0x5CDD4F7B)
+I (.\driver\inc\ddl.h)(0x5CE10E46)
+I (.\mcu\common\base_types.h)(0x5CDD4F7B)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x5CEB79D6)
+I (.\mcu\common\board_evbhc32f072.h)(0x5CE115B5)
+I (.\mcu\common\hc32f072.h)(0x5CE10284)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm0plus.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D2590B6)
+I (.\mcu\common\system_hc32f072.h)(0x5CE10E47)
+I (.\driver\inc\sysctrl.h)(0x5CE114DC)
+I (.\mcu\common\interrupts_hc32f072.h)(0x5CE115AB)
+I (.\App\ddl_device.h)(0x5CEA5113)
+F (.\driver\src\vc.c)(0x5CDD4F7B)(--c99 -c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I .\driver\inc -I .\driver\src -I .\freertos-7.4.2\Source\CMSIS_RTOS -I .\freertos-7.4.2\Source\include -I .\freertos-7.4.2\Source\portable\MemMang -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0\MDK -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0 -I .\freertos-7.4.2\Source\portable\RVDS -I .\freertos-7.4.2\Source\portable -I .\freertos-7.4.2\Source -I .\freertos-7.4.2 -I .\mcu\common\MDK -I .\mcu\common -I .\mcu\MDK -I .\hardware -I .\App-I.\RTE\_HC32F072_FreeRTOS-IC:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\User\AppData\Local\Arm\Packs\HDSC\HC32F072\1.0.0\Device\Include-D__UVISION_VERSION="528" -D_RTE_-o .\objects\vc.o --omf_browse .\objects\vc.crf --depend .\objects\vc.d)
+I (.\driver\inc\vc.h)(0x5CDD4F7B)
+I (.\driver\inc\ddl.h)(0x5CE10E46)
+I (.\mcu\common\base_types.h)(0x5CDD4F7B)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x5CEB79D6)
+I (.\mcu\common\board_evbhc32f072.h)(0x5CE115B5)
+I (.\mcu\common\hc32f072.h)(0x5CE10284)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm0plus.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D2590B6)
+I (.\mcu\common\system_hc32f072.h)(0x5CE10E47)
+I (.\driver\inc\sysctrl.h)(0x5CE114DC)
+I (.\mcu\common\interrupts_hc32f072.h)(0x5CE115AB)
+I (.\App\ddl_device.h)(0x5CEA5113)
+F (.\driver\src\wdt.c)(0x5CDD4F7B)(--c99 -c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I .\driver\inc -I .\driver\src -I .\freertos-7.4.2\Source\CMSIS_RTOS -I .\freertos-7.4.2\Source\include -I .\freertos-7.4.2\Source\portable\MemMang -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0\MDK -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0 -I .\freertos-7.4.2\Source\portable\RVDS -I .\freertos-7.4.2\Source\portable -I .\freertos-7.4.2\Source -I .\freertos-7.4.2 -I .\mcu\common\MDK -I .\mcu\common -I .\mcu\MDK -I .\hardware -I .\App-I.\RTE\_HC32F072_FreeRTOS-IC:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\User\AppData\Local\Arm\Packs\HDSC\HC32F072\1.0.0\Device\Include-D__UVISION_VERSION="528" -D_RTE_-o .\objects\wdt.o --omf_browse .\objects\wdt.crf --depend .\objects\wdt.d)
+I (.\driver\inc\wdt.h)(0x5CDD4F7B)
+I (.\driver\inc\ddl.h)(0x5CE10E46)
+I (.\mcu\common\base_types.h)(0x5CDD4F7B)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x5CEB79D6)
+I (.\mcu\common\board_evbhc32f072.h)(0x5CE115B5)
+I (.\mcu\common\hc32f072.h)(0x5CE10284)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm0plus.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D2590B6)
+I (.\mcu\common\system_hc32f072.h)(0x5CE10E47)
+I (.\driver\inc\sysctrl.h)(0x5CE114DC)
+I (.\mcu\common\interrupts_hc32f072.h)(0x5CE115AB)
+I (.\App\ddl_device.h)(0x5CEA5113)
+F (.\mcu\common\interrupts_hc32f072.c)(0x5D380494)(--c99 -c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I .\driver\inc -I .\driver\src -I .\freertos-7.4.2\Source\CMSIS_RTOS -I .\freertos-7.4.2\Source\include -I .\freertos-7.4.2\Source\portable\MemMang -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0\MDK -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0 -I .\freertos-7.4.2\Source\portable\RVDS -I .\freertos-7.4.2\Source\portable -I .\freertos-7.4.2\Source -I .\freertos-7.4.2 -I .\mcu\common\MDK -I .\mcu\common -I .\mcu\MDK -I .\hardware -I .\App-I.\RTE\_HC32F072_FreeRTOS-IC:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\User\AppData\Local\Arm\Packs\HDSC\HC32F072\1.0.0\Device\Include-D__UVISION_VERSION="528" -D_RTE_-o .\objects\interrupts_hc32f072.o --omf_browse .\objects\interrupts_hc32f072.crf --depend .\objects\interrupts_hc32f072.d)
+I (.\driver\inc\ddl.h)(0x5CE10E46)
+I (.\mcu\common\base_types.h)(0x5CDD4F7B)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x5CEB79D6)
+I (.\mcu\common\board_evbhc32f072.h)(0x5CE115B5)
+I (.\mcu\common\hc32f072.h)(0x5CE10284)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm0plus.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D2590B6)
+I (.\mcu\common\system_hc32f072.h)(0x5CE10E47)
+I (.\driver\inc\sysctrl.h)(0x5CE114DC)
+I (.\mcu\common\interrupts_hc32f072.h)(0x5CE115AB)
+I (.\App\ddl_device.h)(0x5CEA5113)
+F (.\mcu\common\system_hc32f072.c)(0x5CE10E29)(--c99 -c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I .\driver\inc -I .\driver\src -I .\freertos-7.4.2\Source\CMSIS_RTOS -I .\freertos-7.4.2\Source\include -I .\freertos-7.4.2\Source\portable\MemMang -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0\MDK -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0 -I .\freertos-7.4.2\Source\portable\RVDS -I .\freertos-7.4.2\Source\portable -I .\freertos-7.4.2\Source -I .\freertos-7.4.2 -I .\mcu\common\MDK -I .\mcu\common -I .\mcu\MDK -I .\hardware -I .\App-I.\RTE\_HC32F072_FreeRTOS-IC:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\User\AppData\Local\Arm\Packs\HDSC\HC32F072\1.0.0\Device\Include-D__UVISION_VERSION="528" -D_RTE_-o .\objects\system_hc32f072.o --omf_browse .\objects\system_hc32f072.crf --depend .\objects\system_hc32f072.d)
+I (mcu\common\base_types.h)(0x5CDD4F7B)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x5CEB79D6)
+I (mcu\common\hc32f072.h)(0x5CE10284)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm0plus.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D2590B6)
+I (mcu\common\system_hc32f072.h)(0x5CE10E47)
+I (.\driver\inc\sysctrl.h)(0x5CE114DC)
+I (.\driver\inc\ddl.h)(0x5CE10E46)
+I (.\mcu\common\board_evbhc32f072.h)(0x5CE115B5)
+I (.\mcu\common\interrupts_hc32f072.h)(0x5CE115AB)
+I (.\App\ddl_device.h)(0x5CEA5113)
+F (.\mcu\MDK\startup_hc32f072.s)(0x5CEA5113)(--cpu Cortex-M0+ -g --apcs=interwork -I.\RTE\_HC32F072_FreeRTOS-IC:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\User\AppData\Local\Arm\Packs\HDSC\HC32F072\1.0.0\Device\Include--pd "__UVISION_VERSION SETA 528" --pd "_RTE_ SETA 1"--list .\listings\startup_hc32f072.lst --xref -o .\objects\startup_hc32f072.o --depend .\objects\startup_hc32f072.d)
+F (.\hardware\hd_gpt_timer.c)(0x5DE5DBF6)(--c99 -c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I .\driver\inc -I .\driver\src -I .\freertos-7.4.2\Source\CMSIS_RTOS -I .\freertos-7.4.2\Source\include -I .\freertos-7.4.2\Source\portable\MemMang -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0\MDK -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0 -I .\freertos-7.4.2\Source\portable\RVDS -I .\freertos-7.4.2\Source\portable -I .\freertos-7.4.2\Source -I .\freertos-7.4.2 -I .\mcu\common\MDK -I .\mcu\common -I .\mcu\MDK -I .\hardware -I .\App-I.\RTE\_HC32F072_FreeRTOS-IC:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\User\AppData\Local\Arm\Packs\HDSC\HC32F072\1.0.0\Device\Include-D__UVISION_VERSION="528" -D_RTE_-o .\objects\hd_gpt_timer.o --omf_browse .\objects\hd_gpt_timer.crf --depend .\objects\hd_gpt_timer.d)
+I (hardware\hd_gpt_timer.h)(0x5D6DD694)
+I (.\driver\inc\ddl.h)(0x5CE10E46)
+I (.\mcu\common\base_types.h)(0x5CDD4F7B)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x5CEB79D6)
+I (.\mcu\common\board_evbhc32f072.h)(0x5CE115B5)
+I (.\mcu\common\hc32f072.h)(0x5CE10284)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm0plus.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D2590B6)
+I (.\mcu\common\system_hc32f072.h)(0x5CE10E47)
+I (.\driver\inc\sysctrl.h)(0x5CE114DC)
+I (.\mcu\common\interrupts_hc32f072.h)(0x5CE115AB)
+I (.\App\ddl_device.h)(0x5CEA5113)
+I (.\driver\inc\timer3.h)(0x5CDD4F7B)
+I (.\driver\inc\gpio.h)(0x5CE11625)
+I (hardware\hd_adc.h)(0x5DE5D053)
+I (.\driver\inc\adc.h)(0x5CE11300)
+I (.\driver\inc\bgr.h)(0x5CDD4F7B)
+F (.\hardware\hd_gpt_timer.h)(0x5D6DD694)()
+F (.\hardware\hd_gpio.c)(0x5D6E2930)(--c99 -c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I .\driver\inc -I .\driver\src -I .\freertos-7.4.2\Source\CMSIS_RTOS -I .\freertos-7.4.2\Source\include -I .\freertos-7.4.2\Source\portable\MemMang -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0\MDK -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0 -I .\freertos-7.4.2\Source\portable\RVDS -I .\freertos-7.4.2\Source\portable -I .\freertos-7.4.2\Source -I .\freertos-7.4.2 -I .\mcu\common\MDK -I .\mcu\common -I .\mcu\MDK -I .\hardware -I .\App-I.\RTE\_HC32F072_FreeRTOS-IC:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\User\AppData\Local\Arm\Packs\HDSC\HC32F072\1.0.0\Device\Include-D__UVISION_VERSION="528" -D_RTE_-o .\objects\hd_gpio.o --omf_browse .\objects\hd_gpio.crf --depend .\objects\hd_gpio.d)
+I (hardware\hd_gpio.h)(0x5D6DCEBA)
+I (.\driver\inc\sysctrl.h)(0x5CE114DC)
+I (.\driver\inc\ddl.h)(0x5CE10E46)
+I (.\mcu\common\base_types.h)(0x5CDD4F7B)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x5CEB79D6)
+I (.\mcu\common\board_evbhc32f072.h)(0x5CE115B5)
+I (.\mcu\common\hc32f072.h)(0x5CE10284)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm0plus.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D2590B6)
+I (.\mcu\common\system_hc32f072.h)(0x5CE10E47)
+I (.\mcu\common\interrupts_hc32f072.h)(0x5CE115AB)
+I (.\App\ddl_device.h)(0x5CEA5113)
+I (.\driver\inc\gpio.h)(0x5CE11625)
+F (.\hardware\hd_gpio.h)(0x5D6DCEBA)()
+F (.\hardware\hd_pca.c)(0x5D6E2B7B)(--c99 -c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I .\driver\inc -I .\driver\src -I .\freertos-7.4.2\Source\CMSIS_RTOS -I .\freertos-7.4.2\Source\include -I .\freertos-7.4.2\Source\portable\MemMang -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0\MDK -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0 -I .\freertos-7.4.2\Source\portable\RVDS -I .\freertos-7.4.2\Source\portable -I .\freertos-7.4.2\Source -I .\freertos-7.4.2 -I .\mcu\common\MDK -I .\mcu\common -I .\mcu\MDK -I .\hardware -I .\App-I.\RTE\_HC32F072_FreeRTOS-IC:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\User\AppData\Local\Arm\Packs\HDSC\HC32F072\1.0.0\Device\Include-D__UVISION_VERSION="528" -D_RTE_-o .\objects\hd_pca.o --omf_browse .\objects\hd_pca.crf --depend .\objects\hd_pca.d)
+I (hardware\hd_pca.h)(0x5D6E285C)
+I (.\driver\inc\pca.h)(0x5CDD4F7B)
+I (.\driver\inc\ddl.h)(0x5CE10E46)
+I (.\mcu\common\base_types.h)(0x5CDD4F7B)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x5CEB79D6)
+I (.\mcu\common\board_evbhc32f072.h)(0x5CE115B5)
+I (.\mcu\common\hc32f072.h)(0x5CE10284)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm0plus.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D2590B6)
+I (.\mcu\common\system_hc32f072.h)(0x5CE10E47)
+I (.\driver\inc\sysctrl.h)(0x5CE114DC)
+I (.\mcu\common\interrupts_hc32f072.h)(0x5CE115AB)
+I (.\App\ddl_device.h)(0x5CEA5113)
+I (.\driver\inc\gpio.h)(0x5CE11625)
+F (.\hardware\hd_pca.h)(0x5D6E285C)()
+F (.\hardware\hd_uart1.c)(0x5DDF34F1)(--c99 -c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I .\driver\inc -I .\driver\src -I .\freertos-7.4.2\Source\CMSIS_RTOS -I .\freertos-7.4.2\Source\include -I .\freertos-7.4.2\Source\portable\MemMang -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0\MDK -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0 -I .\freertos-7.4.2\Source\portable\RVDS -I .\freertos-7.4.2\Source\portable -I .\freertos-7.4.2\Source -I .\freertos-7.4.2 -I .\mcu\common\MDK -I .\mcu\common -I .\mcu\MDK -I .\hardware -I .\App-I.\RTE\_HC32F072_FreeRTOS-IC:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\User\AppData\Local\Arm\Packs\HDSC\HC32F072\1.0.0\Device\Include-D__UVISION_VERSION="528" -D_RTE_-o .\objects\hd_uart1.o --omf_browse .\objects\hd_uart1.crf --depend .\objects\hd_uart1.d)
+I (hardware\hd_uart1.h)(0x5DDF55EC)
+I (.\driver\inc\ddl.h)(0x5CE10E46)
+I (.\mcu\common\base_types.h)(0x5CDD4F7B)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x5CEB79D6)
+I (.\mcu\common\board_evbhc32f072.h)(0x5CE115B5)
+I (.\mcu\common\hc32f072.h)(0x5CE10284)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm0plus.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D2590B6)
+I (.\mcu\common\system_hc32f072.h)(0x5CE10E47)
+I (.\driver\inc\sysctrl.h)(0x5CE114DC)
+I (.\mcu\common\interrupts_hc32f072.h)(0x5CE115AB)
+I (.\App\ddl_device.h)(0x5CEA5113)
+I (.\driver\inc\uart.h)(0x5CDD4F7B)
+I (.\driver\inc\gpio.h)(0x5CE11625)
+F (.\hardware\hd_uart1.h)(0x5DDF55EC)()
+F (.\hardware\hd_can.c)(0x5DE4D09E)(--c99 -c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I .\driver\inc -I .\driver\src -I .\freertos-7.4.2\Source\CMSIS_RTOS -I .\freertos-7.4.2\Source\include -I .\freertos-7.4.2\Source\portable\MemMang -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0\MDK -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0 -I .\freertos-7.4.2\Source\portable\RVDS -I .\freertos-7.4.2\Source\portable -I .\freertos-7.4.2\Source -I .\freertos-7.4.2 -I .\mcu\common\MDK -I .\mcu\common -I .\mcu\MDK -I .\hardware -I .\App-I.\RTE\_HC32F072_FreeRTOS-IC:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\User\AppData\Local\Arm\Packs\HDSC\HC32F072\1.0.0\Device\Include-D__UVISION_VERSION="528" -D_RTE_-o .\objects\hd_can.o --omf_browse .\objects\hd_can.crf --depend .\objects\hd_can.d)
+I (hardware\hd_can.h)(0x5DE4CF05)
+F (.\hardware\hd_can.h)(0x5DE4CF05)()
+F (.\hardware\hd_adc.c)(0x5DE5DDBA)(--c99 -c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I .\driver\inc -I .\driver\src -I .\freertos-7.4.2\Source\CMSIS_RTOS -I .\freertos-7.4.2\Source\include -I .\freertos-7.4.2\Source\portable\MemMang -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0\MDK -I .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0 -I .\freertos-7.4.2\Source\portable\RVDS -I .\freertos-7.4.2\Source\portable -I .\freertos-7.4.2\Source -I .\freertos-7.4.2 -I .\mcu\common\MDK -I .\mcu\common -I .\mcu\MDK -I .\hardware -I .\App-I.\RTE\_HC32F072_FreeRTOS-IC:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\User\AppData\Local\Arm\Packs\HDSC\HC32F072\1.0.0\Device\Include-D__UVISION_VERSION="528" -D_RTE_-o .\objects\hd_adc.o --omf_browse .\objects\hd_adc.crf --depend .\objects\hd_adc.d)
+I (hardware\hd_adc.h)(0x5DE5D053)
+I (.\driver\inc\adc.h)(0x5CE11300)
+I (.\driver\inc\ddl.h)(0x5CE10E46)
+I (.\mcu\common\base_types.h)(0x5CDD4F7B)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x5CEB79D6)
+I (.\mcu\common\board_evbhc32f072.h)(0x5CE115B5)
+I (.\mcu\common\hc32f072.h)(0x5CE10284)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm0plus.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D2590B6)
+I (C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D2590B6)
+I (.\mcu\common\system_hc32f072.h)(0x5CE10E47)
+I (.\driver\inc\sysctrl.h)(0x5CE114DC)
+I (.\mcu\common\interrupts_hc32f072.h)(0x5CE115AB)
+I (.\App\ddl_device.h)(0x5CEA5113)
+I (.\driver\inc\gpio.h)(0x5CE11625)
+I (.\driver\inc\bgr.h)(0x5CDD4F7B)
+F (.\hardware\hd_adc.h)(0x5DE5D053)()

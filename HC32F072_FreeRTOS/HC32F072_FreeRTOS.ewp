@@ -355,7 +355,8 @@
                     <state>$PROJ_DIR$\mcu\common</state>
                     <state>$PROJ_DIR$\User</state>
                     <state>$TOOLKIT_DIR$\CMSIS\Core\Include</state>
-                    <state>C:\Users\User\Documents\01-HDSC资料\10-L008\F072_FreeRTOS_IAR\User</state>
+                    <state>$PROJ_DIR$\App</state>
+                    <state>$PROJ_DIR$\hardware</state>
                 </option>
                 <option>
                     <name>CCStdIncCheck</name>
@@ -2109,6 +2110,45 @@
         </file>
     </group>
     <group>
+        <name>Hardware</name>
+        <file>
+            <name>$PROJ_DIR$\hardware\hd_adc.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\hardware\hd_adc.h</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\hardware\hd_can.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\hardware\hd_can.h</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\hardware\hd_gpio.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\hardware\hd_gpio.h</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\hardware\hd_gpt_timer.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\hardware\hd_gpt_timer.h</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\hardware\hd_pca.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\hardware\hd_pca.h</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\hardware\hd_uart1.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\hardware\hd_uart1.h</name>
+        </file>
+    </group>
+    <group>
         <name>lib</name>
         <file>
             <name>$PROJ_DIR$\driver\src\adc.c</name>
@@ -2219,7 +2259,10 @@
     <group>
         <name>User</name>
         <file>
-            <name>$PROJ_DIR$\User\main.c</name>
+            <name>$PROJ_DIR$\App\app_task.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\App\main.c</name>
         </file>
     </group>
 </project>

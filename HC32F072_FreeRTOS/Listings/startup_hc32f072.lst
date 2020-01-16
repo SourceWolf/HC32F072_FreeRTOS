@@ -421,10 +421,10 @@ ARM Macro Assembler    Page 7
               00000000 
 Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M0+ --apcs=inter
 work --depend=.\objects\startup_hc32f072.d -o.\objects\startup_hc32f072.o -I.\R
-TE\_HC32F072_FreeRTOS -IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include 
--IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\Device\ARM\ARMCM0plus\Include --predefine
-="__UVISION_VERSION SETA 523" --predefine="_RTE_ SETA 1" --predefine="ARMCM0P S
-ETA 1" --list=.\listings\startup_hc32f072.lst mcu\MDK\startup_hc32f072.s
+TE\_HC32F072_FreeRTOS -IC:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\C
+MSIS\Core\Include -IC:\Users\User\AppData\Local\Arm\Packs\HDSC\HC32F072\1.0.0\D
+evice\Include --predefine="__UVISION_VERSION SETA 528" --predefine="_RTE_ SETA 
+1" --list=.\listings\startup_hc32f072.lst mcu\MDK\startup_hc32f072.s
 
 
 
@@ -981,4 +981,4 @@ Symbol: __use_two_region_memory
       None
 Comment: __use_two_region_memory unused
 3 symbols
-392 symbols in table
+391 symbols in table
