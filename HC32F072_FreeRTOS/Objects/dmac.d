@@ -1,20 +1,15 @@
-.\objects\dmac.o: driver\src\dmac.c
-.\objects\dmac.o: .\driver\inc\dmac.h
-.\objects\dmac.o: .\driver\inc\ddl.h
-.\objects\dmac.o: .\mcu\common\base_types.h
-.\objects\dmac.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
-.\objects\dmac.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
-.\objects\dmac.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
-.\objects\dmac.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
-.\objects\dmac.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\assert.h
-.\objects\dmac.o: .\mcu\common\board_evbhc32f072.h
-.\objects\dmac.o: .\mcu\common\hc32f072.h
-.\objects\dmac.o: C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm0plus.h
-.\objects\dmac.o: C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h
-.\objects\dmac.o: C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h
-.\objects\dmac.o: C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h
-.\objects\dmac.o: .\mcu\common\system_hc32f072.h
-.\objects\dmac.o: .\driver\inc\sysctrl.h
-.\objects\dmac.o: .\driver\inc\ddl.h
-.\objects\dmac.o: .\mcu\common\interrupts_hc32f072.h
-.\objects\dmac.o: .\App\ddl_device.h
+./objects/dmac.o: driver\src\dmac.c driver\inc\dmac.h driver\inc\ddl.h \
+  mcu\common\base_types.h C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdio.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\string.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stddef.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdint.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\assert.h \
+  mcu\common\board_evbhc32f072.h mcu\common\hc32f072.h \
+  C:\Users\Michael\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm0plus.h \
+  C:\Users\Michael\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h \
+  C:\Users\Michael\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h \
+  C:\Users\Michael\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armclang.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\arm_compat.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\arm_acle.h \
+  mcu\common\system_hc32f072.h driver\inc\sysctrl.h \
+  mcu\common\interrupts_hc32f072.h driver\inc\ddl.h App\ddl_device.h

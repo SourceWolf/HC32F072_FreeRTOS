@@ -1,19 +1,21 @@
-.\objects\cmsis_os.o: freertos-7.4.2\Source\CMSIS_RTOS\cmsis_os.c
-.\objects\cmsis_os.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
-.\objects\cmsis_os.o: freertos-7.4.2\Source\CMSIS_RTOS\cmsis_os.h
-.\objects\cmsis_os.o: .\freertos-7.4.2\Source\include\FreeRTOS.h
-.\objects\cmsis_os.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
-.\objects\cmsis_os.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
-.\objects\cmsis_os.o: .\App\FreeRTOSConfig.h
-.\objects\cmsis_os.o: .\freertos-7.4.2\Source\include\projdefs.h
-.\objects\cmsis_os.o: .\freertos-7.4.2\Source\include\portable.h
-.\objects\cmsis_os.o: .\freertos-7.4.2\Source\include\deprecated_definitions.h
-.\objects\cmsis_os.o: .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0\MDK\portmacro.h
-.\objects\cmsis_os.o: .\freertos-7.4.2\Source\include\mpu_wrappers.h
-.\objects\cmsis_os.o: .\freertos-7.4.2\Source\include\task.h
-.\objects\cmsis_os.o: .\freertos-7.4.2\Source\include\list.h
-.\objects\cmsis_os.o: .\freertos-7.4.2\Source\include\timers.h
-.\objects\cmsis_os.o: .\freertos-7.4.2\Source\include\queue.h
-.\objects\cmsis_os.o: .\freertos-7.4.2\Source\include\semphr.h
-.\objects\cmsis_os.o: .\freertos-7.4.2\Source\include\event_groups.h
-.\objects\cmsis_os.o: C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h
+./objects/cmsis_os.o: freertos-7.4.2\Source\CMSIS_RTOS\cmsis_os.c \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\string.h \
+  freertos-7.4.2\Source\CMSIS_RTOS\cmsis_os.h \
+  freertos-7.4.2\Source\include\FreeRTOS.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stddef.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdint.h App\FreeRTOSConfig.h \
+  freertos-7.4.2\Source\include\projdefs.h \
+  freertos-7.4.2\Source\include\portable.h \
+  freertos-7.4.2\Source\include\deprecated_definitions.h \
+  freertos-7.4.2\Source\portable\RVDS\ARM_CM0\GCC\portmacro.h \
+  freertos-7.4.2\Source\include\mpu_wrappers.h \
+  freertos-7.4.2\Source\include\task.h \
+  freertos-7.4.2\Source\include\list.h \
+  freertos-7.4.2\Source\include\timers.h \
+  freertos-7.4.2\Source\include\task.h \
+  freertos-7.4.2\Source\include\queue.h \
+  freertos-7.4.2\Source\include\semphr.h \
+  freertos-7.4.2\Source\include\queue.h \
+  freertos-7.4.2\Source\include\event_groups.h \
+  freertos-7.4.2\Source\include\timers.h \
+  C:\Users\Michael\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_gcc.h

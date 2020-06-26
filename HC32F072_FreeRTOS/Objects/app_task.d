@@ -1,46 +1,35 @@
-.\objects\app_task.o: App\app_task.c
-.\objects\app_task.o: App\app_task.h
-.\objects\app_task.o: .\freertos-7.4.2\Source\CMSIS_RTOS\cmsis_os.h
-.\objects\app_task.o: .\freertos-7.4.2\Source\include\FreeRTOS.h
-.\objects\app_task.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
-.\objects\app_task.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
-.\objects\app_task.o: .\App\FreeRTOSConfig.h
-.\objects\app_task.o: .\freertos-7.4.2\Source\include\projdefs.h
-.\objects\app_task.o: .\freertos-7.4.2\Source\include\portable.h
-.\objects\app_task.o: .\freertos-7.4.2\Source\include\deprecated_definitions.h
-.\objects\app_task.o: .\freertos-7.4.2\Source\portable\RVDS\ARM_CM0\MDK\portmacro.h
-.\objects\app_task.o: .\freertos-7.4.2\Source\include\mpu_wrappers.h
-.\objects\app_task.o: .\freertos-7.4.2\Source\include\task.h
-.\objects\app_task.o: .\freertos-7.4.2\Source\include\list.h
-.\objects\app_task.o: .\freertos-7.4.2\Source\include\timers.h
-.\objects\app_task.o: .\freertos-7.4.2\Source\include\queue.h
-.\objects\app_task.o: .\freertos-7.4.2\Source\include\semphr.h
-.\objects\app_task.o: .\freertos-7.4.2\Source\include\event_groups.h
-.\objects\app_task.o: .\hardware\hd_gpio.h
-.\objects\app_task.o: .\driver\inc\sysctrl.h
-.\objects\app_task.o: .\driver\inc\ddl.h
-.\objects\app_task.o: .\mcu\common\base_types.h
-.\objects\app_task.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
-.\objects\app_task.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
-.\objects\app_task.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\assert.h
-.\objects\app_task.o: .\mcu\common\board_evbhc32f072.h
-.\objects\app_task.o: .\mcu\common\hc32f072.h
-.\objects\app_task.o: C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm0plus.h
-.\objects\app_task.o: C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h
-.\objects\app_task.o: C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h
-.\objects\app_task.o: C:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h
-.\objects\app_task.o: .\mcu\common\system_hc32f072.h
-.\objects\app_task.o: .\driver\inc\sysctrl.h
-.\objects\app_task.o: .\mcu\common\interrupts_hc32f072.h
-.\objects\app_task.o: .\driver\inc\ddl.h
-.\objects\app_task.o: .\App\ddl_device.h
-.\objects\app_task.o: .\driver\inc\gpio.h
-.\objects\app_task.o: .\hardware\hd_gpt_timer.h
-.\objects\app_task.o: .\driver\inc\timer3.h
-.\objects\app_task.o: .\hardware\hd_pca.h
-.\objects\app_task.o: .\driver\inc\pca.h
-.\objects\app_task.o: .\hardware\hd_uart1.h
-.\objects\app_task.o: .\driver\inc\uart.h
-.\objects\app_task.o: .\hardware\hd_adc.h
-.\objects\app_task.o: .\driver\inc\adc.h
-.\objects\app_task.o: .\driver\inc\bgr.h
+./objects/app_task.o: App\app_task.c App\app_task.h \
+  freertos-7.4.2\Source\CMSIS_RTOS\cmsis_os.h \
+  freertos-7.4.2\Source\include\FreeRTOS.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stddef.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdint.h App\FreeRTOSConfig.h \
+  freertos-7.4.2\Source\include\projdefs.h \
+  freertos-7.4.2\Source\include\portable.h \
+  freertos-7.4.2\Source\include\deprecated_definitions.h \
+  freertos-7.4.2\Source\portable\RVDS\ARM_CM0\GCC\portmacro.h \
+  freertos-7.4.2\Source\include\mpu_wrappers.h \
+  freertos-7.4.2\Source\include\task.h \
+  freertos-7.4.2\Source\include\list.h \
+  freertos-7.4.2\Source\include\timers.h \
+  freertos-7.4.2\Source\include\task.h \
+  freertos-7.4.2\Source\include\queue.h \
+  freertos-7.4.2\Source\include\semphr.h \
+  freertos-7.4.2\Source\include\queue.h \
+  freertos-7.4.2\Source\include\event_groups.h \
+  freertos-7.4.2\Source\include\timers.h hardware\hd_gpio.h \
+  driver\inc\sysctrl.h driver\inc\ddl.h mcu\common\base_types.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdio.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\string.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\assert.h \
+  mcu\common\board_evbhc32f072.h mcu\common\hc32f072.h \
+  C:\Users\Michael\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm0plus.h \
+  C:\Users\Michael\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h \
+  C:\Users\Michael\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h \
+  C:\Users\Michael\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armclang.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\arm_compat.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\arm_acle.h \
+  mcu\common\system_hc32f072.h driver\inc\sysctrl.h \
+  mcu\common\interrupts_hc32f072.h driver\inc\ddl.h App\ddl_device.h \
+  driver\inc\gpio.h hardware\hd_gpt_timer.h driver\inc\timer3.h \
+  hardware\hd_pca.h driver\inc\pca.h hardware\hd_uart1.h \
+  driver\inc\uart.h hardware\hd_adc.h driver\inc\adc.h driver\inc\bgr.h

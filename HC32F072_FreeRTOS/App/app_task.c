@@ -1,5 +1,5 @@
 #include "app_task.h"
-
+//#include "SEGGER_RTT.h"
 TaskHandle_t Hd_Test_Task;
 void Task_Test(void *param)
 {    
@@ -16,7 +16,7 @@ void Task_Test(void *param)
 //        Gpio_SetIO(EVB_LEDY_PORT, EVB_LEDY_PIN);
 //        Gpio_SetIO(EVB_LEDG_PORT, EVB_LEDG_PIN);
 //        Gpio_SetIO(EVB_LEDB_PORT, EVB_LEDB_PIN);
-
+//		SEGGER_RTT_printf(0,"\r task_RTT\r\n");
         vTaskDelay(1000/portTICK_PERIOD_MS);
 
         ///< LED¹Ø±Õ

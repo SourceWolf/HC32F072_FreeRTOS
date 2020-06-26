@@ -53,7 +53,7 @@
  * Include files
  ******************************************************************************/
 #include "gpio.h"
-
+//#include "SEGGER_RTT.h"
 /******************************************************************************
  * Local pre-processor symbols/macros ('#define')
  ******************************************************************************/
@@ -159,6 +159,7 @@ int32_t main(void)
 //    while(1){;}
     SysTick_Config(clk_data/1000);
     NVIC_EnableIRQ(SysTick_IRQn);
+//	SEGGER_RTT_Init();
     os_task_init();
     while(1)
     {
